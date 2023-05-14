@@ -30,7 +30,7 @@ Al finalizar la clase el estudiante será capaz de:
 <a name="definicion"> </a>
 ## 💻 ¿Qué es Linux?
 <p align="center">
-  <img src="../imagenes/terminal-linux.png" style="width: 30%; height: 150px; float: left; padding: 15px;" alt="linux">
+  <img src="../imagenes/terminal-linux.png" style="width: 30%; height: 180px; float: left; padding: 15px;" alt="linux">
 </p>
 
 
@@ -95,7 +95,7 @@ La CLI se basa principalmente en la entrada del teclado.
 <a name="distribuciones"> </a>
 ### 🕸️ **Linux tiene distribuciones**
 <p align="center">
-  <img src="../imagenes/distribuciones.png" style="width: 50%; height: 300px; float: left; padding: 15px;" alt="distribuciones">
+  <img src="../imagenes/distribuciones.png" alt="distribuciones" width="80%">
 </p>
 Una distribución se refiere al kernel de Linux, las herramientas y el conjunto de aplicaciones que se agrupan.
 
@@ -116,6 +116,8 @@ Las distribuciones modernas cuentan con:
 - Un entorno gráfico (normalmente KDE o GNOME), con el que se integren el resto de los programas.
 - Manuales de instalación y uso y documentación adicional sobre los programas. 
 - Un sistema de seguimiento de errores (bugs) y fallos de seguridad que proporcione al usuario versiones corregidas de los programas lo más rápido posible cuando se detecte un fallo.
+
+
 
 
 <a name="referencias"> </a>
