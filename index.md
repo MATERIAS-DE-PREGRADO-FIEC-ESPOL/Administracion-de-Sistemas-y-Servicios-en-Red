@@ -9,7 +9,7 @@
     * [1.1. Distribuciones Linux](unidades/unidad1/unidad1_1.md)
     * [1.2. Software Linux](unidades/unidad1/unidad1_2.md)
     * [1.3. Administración del sistema](unidades/unidad1/unidad1_3.md)
-    * [1.4. Mantenimiento y respaldo del sistema(unidades/unidad1/unidad1_4.md)
+    * [1.4. Mantenimiento y respaldo del sistema](unidades/unidad1/unidad1_4.md)
 
 * Unidad 2: Internet y servicios en red
     * 2.1. Administración de servicios en red
