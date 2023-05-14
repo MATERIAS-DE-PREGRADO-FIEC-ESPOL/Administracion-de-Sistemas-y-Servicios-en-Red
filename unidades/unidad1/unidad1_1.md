@@ -17,6 +17,7 @@ remote_theme: pages-themes/cayman@v0.2.0
         - [Debian]
         - [Android]
         - [Otras distribuciones de Linux]
+- [Referencias](#referencias)
 
 <a name="objetivo_aprendizaje"> </a>
 ## 🎯 Objetivo de Aprendizaje
@@ -26,7 +27,10 @@ Al finalizar la clase el estudiante será capaz de:
 
 <a name="definicion"> </a>
 ## 💻 ¿Qué es Linux?
-Linux es un sistema operativo creado por Linus Torvalds que consiste en el software que administra una computadora. 
+<p align="center">
+  <img src="../imagenes/terminal-linux.png" alt="linux" width="30%">
+</p>
+En 1983, *Richard Stallman* inició el Proyecto GNU, con el propósito de crear un sistema operativo similar y compatible con UNIX. En 1991, en Helsinki, *Linus Torvalds* comenzó un proyecto que más tarde llegaría a ser el núcleo Linux.
 Las características que componen Linux incluyen lo siguiente:
 - Detección y preparación del hardware
 - Gestión de procesos
@@ -39,20 +43,20 @@ Las características que componen Linux incluyen lo siguiente:
 - Herramientas de programación
 
 <a name="industria"> </a>
-### 🕸️ Linux en la industria
+### 🕸️ **Linux en la industria**
 Los trabajos de Linux están en todas partes, las habilidades de Linux están en demanda en casi todas las industrias y categorías de trabajo en el planeta.
 
 VIDEO
 
 <a name="nucleo"> </a>
-### 🕸️ Linux es un kernel
-Linux significa el núcleo del sistema, que es el controlador central de todo lo que sucede en la computadora.
+### 🕸️ **Linux es un kernel**
+Linux significa el *núcleo del sistema*, que es el controlador central de todo lo que sucede en la computadora.
 Linux es una combinación de software llamado GNU/Linux, que define el sistema operativo.
 - GNU es el software gratuito que proporciona equivalentes de código abierto de muchos comandos comunes de UNIX.
 - La parte de Linux de esta combinación es el kernel de Linux, que es el núcleo del sistema operativo.
 
 <a name="open_source"> </a>
-### 🕸️ Linux es open-source
+### 🕸️ **Linux es open-source**
 Históricamente, la mayoría del software se ha emitido bajo una licencia de código cerrado.
 
 Esto significa que tiene derecho a usar el programa ejecutable o el código de máquina, pero no puede ver el código fuente.
@@ -62,7 +66,7 @@ El desarrollo de Linux es muy similar al aumento del software de código abierto
 La filosofía de código abierto es que tiene derecho a obtener el código fuente del software y modificarlo para su propio uso.
 
 <a name="cli"> </a>
-### 🕸️ Linux usa CLI
+### 🕸️ **Linux usa CLI**
 Hay dos tipos básicos de interfaces disponibles que le permiten interactuar con el sistema operativo.
 
 - El usuario típico de la computadora hoy está más familiarizado con una interfaz gráfica de usuario (GUI).
@@ -77,7 +81,7 @@ La CLI se basa principalmente en la entrada del teclado.
         - Se puede ejecutar un terminal virtual al mismo tiempo que una GUI, pero puede requerir que el usuario inicie sesión a través del terminal virtual antes de poder ejecutar commandos.
 
 <a name="distribuciones"> </a>
-### 🕸️ Linux tiene distribuciones
+### 🕸️ **Linux tiene distribuciones**
 Una distribución se refiere al kernel de Linux, las herramientas y el conjunto de aplicaciones que se agrupan.
 
 Tome Linux y las herramientas GNU, agregue algunas aplicaciones orientadas al usuario, como un navegador web y un cliente de correo electrónico, y tendrá un sistema Linux completo.
@@ -90,4 +94,6 @@ Existen organizaciones comerciales que se dedican a empaquetar juntos los progra
 
 También existen distribuciones realizadas por voluntarios y que no tienen ánimo de lucro.
 
-
+<a name="referencias"> </a>
+## 📚 Referencias
+* Linux: The Complete Reference, Sixth Edition by Richard Petersen
