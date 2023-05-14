@@ -183,9 +183,9 @@ Las distribuciones modernas cuentan con:
 <a name="referencias"> </a>
 ## 📚 Referencias
 * Linux: The Complete Reference, Sixth Edition by Richard Petersen
-* Red Hat Enterprise Linux (RHEL), https://www.redhat.com/
-* SUSE, https://www.suse.com/
-* Debian, https://www.debian.org/
-* Android, https://www.android.com/
-* Raspberry Pi, https://www.raspberrypi.org/
-* Linux From Scratch (LFS), https://www.linuxfromscratch.org
+* Red Hat Enterprise Linux (RHEL), from https://www.redhat.com/
+* SUSE, from https://www.suse.com/
+* Debian, from https://www.debian.org/
+* Android, from https://www.android.com/
+* Raspberry Pi, from https://www.raspberrypi.org/
+* Linux From Scratch (LFS), from https://www.linuxfromscratch.org
