@@ -164,10 +164,28 @@ Las distribuciones modernas cuentan con:
 
 - Proporciona una plataforma para usuarios móviles.
 - Carece de los paquetes tradicionales de GNU / Linux para que sea compatible con el escritorio.
-
 - Patrocinado por Google.
+- [Android](https://www.android.com/) ofrece continuamente actualizaciones para ayudarte a hacer las cosas más rápido, más fácilmente y de forma personalizada.
+
+
+<a name="otras"> </a>
+### 🕸️ **Otras distribuciones de Linux**
+<p align="center">
+  <img src="../imagenes/raspberryPi.jpg" style="width: 25%; height: 90px; float: right; padding: 15px;" alt="debian">
+</p>
+
+- [Raspberry Pi](https://www.raspberrypi.org/) es una distribución de Linux diseñada para ejecutarse en hardware "Raspberry Pi”.
+
+- [Linux From Scratch (LFS)](https://www.linuxfromscratch.org/) consiste en un libro en línea, código fuente e instrucciones para construir una distribución Linux personalizada.
+
 
 
 <a name="referencias"> </a>
 ## 📚 Referencias
 * Linux: The Complete Reference, Sixth Edition by Richard Petersen
+* Red Hat Enterprise Linux (RHEL), https://www.redhat.com/
+* SUSE, https://www.suse.com/
+* Debian, https://www.debian.org/
+* Android, https://www.android.com/
+* Raspberry Pi, https://www.raspberrypi.org/
+* Linux From Scratch (LFS), https://www.linuxfromscratch.org
