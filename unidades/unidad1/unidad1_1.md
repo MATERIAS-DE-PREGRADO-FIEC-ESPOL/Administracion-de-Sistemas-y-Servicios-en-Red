@@ -16,11 +16,11 @@ Al finalizar la clase el estudiante será capaz de:
     - [Linux es open source](#open_source) 
     - [Linux usa CLI](#cli)
     - [Linux tiene distribuciones](#distribuciones)
-        - [Red Hat]
-        - [SUSE]
-        - [Debian]
-        - [Android]
-        - [Otras distribuciones de Linux]
+        - [Red Hat](#redhat)
+        - [SUSE](#suse)
+        - [Debian](#debian)
+        - [Android](#android)
+        - [Otras distribuciones de Linux](#otras)
 - [Referencias](#referencias)
 
 <a name="objetivo_aprendizaje"> </a>
@@ -117,7 +117,55 @@ Las distribuciones modernas cuentan con:
 - Manuales de instalación y uso y documentación adicional sobre los programas. 
 - Un sistema de seguimiento de errores (bugs) y fallos de seguridad que proporcione al usuario versiones corregidas de los programas lo más rápido posible cuando se detecte un fallo.
 
+<a name="redhat"> </a>
+### 🕸️ **Red Hat**
+<p align="center">
+  <img src="../imagenes/redhat.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
+</p>
 
+- Se enfoca en aplicaciones de servidor como web y servicio de archivos.
+- [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/), una distribución estable con largos ciclos de lanzamiento.
+- Su gestor de paquetes (RPM) se ha convertido en un estándar en el mundo GNU/Linux.
+- Patrocina el Proyecto Fedora, un escritorio personal con el último software.
+- CentOS es una versión gratuita del software RHEL que no ofrece soporte.
+- Scientific Linux es una distribución de uso específica basada en Red Hat.
+
+
+<a name="suse"> </a>
+### 🕸️ **SUSE**
+<p align="center">
+  <img src="../imagenes/suse.png" style="width: 15%; height: 70px; float: right; padding: 15px;" alt="debian">
+</p>
+
+- [SUSE](https://www.suse.com/) Una de las primeras distribuciones.
+- Originalmente derivado de Slackware.
+- Contiene código propietario y se vende como un producto de servidor. Algunos módulos o complementos pueden contener código propietario.
+- Se vende como un producto de servidor aunque existe una versión de estación de trabajo. 
+- Se preocupa especialmente por la seguridad del sistema.
+- [OpenSUSE](https://www.opensuse.org/) es una versión completamente abierta y gratuita con múltiples paquetes de escritorio.
+
+
+<a name="debian"> </a>
+### 🕸️ **Debian**
+<p align="center">
+  <img src="../imagenes/debian.png" style="width: 10%; height: 70px; float: right; padding: 15px;" alt="debian">
+</p>
+
+- Esfuerzo comunitario que promueve el uso de software de código abierto.
+- [Debian](https://www.debian.org/) inventó su propio sistema de administración de paquetes (apt) basado en el formato de archivo .deb.
+- Ubuntu es su distribución derivada más popular, que tiene variantes para escritorio, servidor y aplicaciones. Ubuntu también ofrece una versión LTS.
+- Linux Mint es un derivado de Ubuntu con varias versiones gratuitas, algunas tienen restricciones de licencia.
+
+<a name="android"> </a>
+### 🕸️ **Android**
+<p align="center">
+  <img src="../imagenes/android.png" style="width: 10%; height: 50px; float: right; padding: 15px;" alt="debian">
+</p>
+
+- Proporciona una plataforma para usuarios móviles.
+- Carece de los paquetes tradicionales de GNU / Linux para que sea compatible con el escritorio.
+
+- Patrocinado por Google.
 
 
 <a name="referencias"> </a>
