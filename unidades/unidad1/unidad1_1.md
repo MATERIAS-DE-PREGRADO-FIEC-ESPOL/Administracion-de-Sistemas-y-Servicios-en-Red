@@ -148,7 +148,7 @@ Las distribuciones modernas cuentan con:
 <a name="debian"> </a>
 ### 🕸️ **Debian**
 <p align="center">
-  <img src="../imagenes/debian.png" style="width: 20%; height: 70px; float: right; padding: 15px;" alt="debian">
+  <img src="../imagenes/debian.png" style="width: 15%; height: 70px; float: right; padding: 15px;" alt="debian">
 </p>
 
 - Esfuerzo comunitario que promueve el uso de software de código abierto.
@@ -159,7 +159,7 @@ Las distribuciones modernas cuentan con:
 <a name="android"> </a>
 ### 🕸️ **Android**
 <p align="center">
-  <img src="../imagenes/android.png" style="width: 30%; height: 80px; float: right; padding: 15px;" alt="android">
+  <img src="../imagenes/android.png" style="width: 20%; height: 80px; float: right; padding: 15px;" alt="android">
 </p>
 
 - Proporciona una plataforma para usuarios móviles.
