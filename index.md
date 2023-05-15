@@ -1,8 +1,8 @@
 # MATERIA DE ADMINISTRACIÓN DE SISTEMAS Y SERVICIOS EN RED
 
-## CÓDIGO: TLMG1022 (ASSR)
-## CARRERA: INGENIERÍA EN TELEMÁTICA
-## FIEC ESPOL
+## Código: TLMG1022 (ASSR)
+## Carrera: Ingeniería en Telemática
+## Facultad de Ingeniería en Electricidad y Computación (FIEC ESPOL)
 
 
 ## POLÍTICAS
