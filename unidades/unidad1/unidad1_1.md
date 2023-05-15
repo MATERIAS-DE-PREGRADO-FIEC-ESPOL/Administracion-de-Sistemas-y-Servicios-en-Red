@@ -58,8 +58,6 @@ Las características que componen Linux incluyen lo siguiente:
 
 Los trabajos de Linux están en todas partes, las habilidades de Linux están en demanda en casi todas las industrias y categorías de trabajo en el planeta.
 
-VIDEO
-
 <a name="nucleo"> </a>
 ### 🕸️ **Linux es un kernel**
 Linux significa el *núcleo del sistema*, que es el controlador central de todo lo que sucede en la computadora.
