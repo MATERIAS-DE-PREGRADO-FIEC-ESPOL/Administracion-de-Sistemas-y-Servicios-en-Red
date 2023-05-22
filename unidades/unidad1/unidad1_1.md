@@ -23,10 +23,6 @@ Al finalizar la clase el estudiante será capaz de:
         - [Otras distribuciones de Linux](#otras)
 - [Referencias](#referencias)
 
-<a name="objetivo_aprendizaje"> </a>
-
-
-
 <a name="definicion"> </a>
 ## 💻 ¿Qué es Linux?
 <p align="center">
