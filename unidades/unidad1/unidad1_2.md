@@ -11,6 +11,9 @@ Al finalizar la clase el estudiante será capaz de:
 
 ## 1.2. Software Linux
 - [Categorías de aplicaciones](#aplicaciones)
+    - [Aplicaciones de servidor](#servidor)
+    - [Aplicaciones de escritorio](#escritorio)
+    - [Herramientas](#herramientas)
 - [Herramientas de consola](#herramientas_consola)
 - [Gestión de paquetes](#paquetes)
 - [Lenguajes de desarrollo](#lenguajes)
@@ -31,8 +34,51 @@ El software de Linux generalmente cae en una de tres categorías:
 2. *Aplicaciones de escritorio*: Navegadores web, editores de texto, reproductores de música u otras aplicaciones con las que los usuarios interactúan directamente.
 3. *Herramientas*: Una categoría suelta de software que existe para facilitar la administración de los sistemas informáticos.
 
+<a name="servidor"> </a>
+### 🕸️ **Aplicaciones de servidor**
+- Linux sobresale en la ejecución de aplicaciones de servidor debido a su confiabilidad y eficiencia.
+- Uno de los primeros usos de Linux fue para *servidores web*.
+    - Un servidor web aloja contenido para páginas web, que son vistas por un navegador web utilizando el Protocolo de transferencia de hipertexto (HTTP) o cifrado con HTTPS.
+- Existe una creciente demanda de software de servidor de nube privada que se pueda implementar y administrar internamente.
+
+<p align="center">
+  <img src="../imagenes/owncloud.png" style="width: 20%; height: 80px; float: left; padding: 10px;" alt="owncloud">
+</p>
+
+    - El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.
+
+
+<p align="center">
+  <img src="../imagenes/nextcloud.png" style="width: 20%; height: 70px; float: left; padding: 10px;" alt="nextcloud">
+</p>
+
+    - El proyecto Nextcloud también proporciona software de nube privada.
+
+
+<a name="escritorio"> </a>
+### 🕸️ **Aplicaciones de escritorio**
+- El ecosistema de Linux tiene una amplia variedad de aplicaciones de escritorio.
+- ***Correo electrónico:***
+    - La Fundación Mozilla lanzó Thunderbird, un cliente de correo electrónico de escritorio con todas las funciones que se conecta a un servidor POP o IMAP.
+    - Otros clientes de correo electrónico notables son Evolution y KMail, que son los clientes de correo electrónico del proyecto GNOME y KDE.
+- ***Creativo:***
+    - Para los tipos creativos, hay Blender, GIMP (Programa de manipulación de imágenes Gnu) y Audacity, que manejan la creación de películas en 3D, la manipulación de imágenes en 2D y la edición de audio, respectivamente.
+- ***Productividad:***
+<p align="center">
+  <img src="../gifs/libreoffice.gif" style="width: 25%; height: 80px; float: left; padding: 10px;" alt="libreoffice">
+</p>
+
+    - LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces llamada OpenOffice.org).
+- ***Navegadores web:***
+<p align="center">
+  <img src="../imagenes/firefoxgoogle.png" style="width: 25%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
+</p>
+
+    - Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código abierto que son rápidos, ricos en funciones y tienen un excelente soporte para desarrolladores web.
+
 
 <a name="herramientas_consola"> </a>
+
 ## 💻 Herramientas de consola
 
 
