@@ -42,19 +42,17 @@ El software de Linux generalmente cae en una de tres categorías:
 - Existe una creciente demanda de software de servidor de nube privada que se pueda implementar y administrar internamente.
 
 <p align="center">
-  <img src="../imagenes/owncloud.png" style="width: 20%; height: 80px; float: left; padding: 20px;" alt="owncloud">
+  <img src="../imagenes/owncloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="owncloud">
 </p>
+El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.  
 
-El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.
-
-
+<br><br>
 <p align="center">
-  <img src="../imagenes/nextcloud.png" style="width: 20%; height: 70px; float: left; padding: 20px;" alt="nextcloud">
+  <img src="../imagenes/nextcloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="nextcloud">
 </p>
-
 El proyecto Nextcloud también proporciona software de nube privada.
 
-
+<br><br>
 <a name="escritorio"> </a>
 ### </> **Aplicaciones de escritorio**
 - El ecosistema de Linux tiene una amplia variedad de aplicaciones de escritorio.
@@ -67,16 +65,16 @@ El proyecto Nextcloud también proporciona software de nube privada.
 
 - ***Productividad:***
 <p align="center">
-  <img src="../gifs/libreoffice.gif" style="width: 25%; height: 100px; float: left; padding: 5px;" alt="libreoffice">
+  <img src="../gifs/libreoffice.gif" style="width: 20%; height: 100px; float: left; padding: 5px;" alt="libreoffice">
 </p>
 
 LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces llamada OpenOffice.org).
 
-
-
+<br><br>
+<br><br>
 - ***Navegadores web:***
 <p align="center">
-  <img src="../imagenes/firefoxgoogle.png" style="width: 25%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
+  <img src="../imagenes/firefoxgoogle.png" style="width: 20%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
 </p>
 
 Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código abierto que son rápidos, ricos en funciones y tienen un excelente soporte para desarrolladores web.
