@@ -42,17 +42,17 @@ El software de Linux generalmente cae en una de tres categorías:
 - Existe una creciente demanda de software de servidor de nube privada que se pueda implementar y administrar internamente.
 
 <p align="center">
-  <img src="../imagenes/owncloud.png" style="width: 20%; height: 80px; float: left; padding: 10px;" alt="owncloud">
+  <img src="../imagenes/owncloud.png" style="width: 20%; height: 80px; float: left; padding: 20px;" alt="owncloud">
 </p>
 
-    - El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.
+El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.
 
 
 <p align="center">
-  <img src="../imagenes/nextcloud.png" style="width: 20%; height: 70px; float: left; padding: 10px;" alt="nextcloud">
+  <img src="../imagenes/nextcloud.png" style="width: 20%; height: 70px; float: left; padding: 20px;" alt="nextcloud">
 </p>
 
-    - El proyecto Nextcloud también proporciona software de nube privada.
+El proyecto Nextcloud también proporciona software de nube privada.
 
 
 <a name="escritorio"> </a>
@@ -61,20 +61,23 @@ El software de Linux generalmente cae en una de tres categorías:
 - ***Correo electrónico:***
     - La Fundación Mozilla lanzó Thunderbird, un cliente de correo electrónico de escritorio con todas las funciones que se conecta a un servidor POP o IMAP.
     - Otros clientes de correo electrónico notables son Evolution y KMail, que son los clientes de correo electrónico del proyecto GNOME y KDE.
+
 - ***Creativo:***
     - Para los tipos creativos, hay Blender, GIMP (Programa de manipulación de imágenes Gnu) y Audacity, que manejan la creación de películas en 3D, la manipulación de imágenes en 2D y la edición de audio, respectivamente.
+    
 - ***Productividad:***
 <p align="center">
-  <img src="../gifs/libreoffice.gif" style="width: 25%; height: 80px; float: left; padding: 10px;" alt="libreoffice">
+  <img src="../gifs/libreoffice.gif" style="width: 25%; height: 100px; float: left; padding: 10px;" alt="libreoffice">
 </p>
 
-    - LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces llamada OpenOffice.org).
+LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces llamada OpenOffice.org).
+
 - ***Navegadores web:***
 <p align="center">
   <img src="../imagenes/firefoxgoogle.png" style="width: 25%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
 </p>
 
-    - Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código abierto que son rápidos, ricos en funciones y tienen un excelente soporte para desarrolladores web.
+Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código abierto que son rápidos, ricos en funciones y tienen un excelente soporte para desarrolladores web.
 
 
 <a name="herramientas_consola"> </a>
