@@ -9,7 +9,6 @@ remote_theme: pages-themes/cayman@v0.2.0
 Al finalizar la clase el estudiante será capaz de:
 - Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
-<<<<<<< Updated upstream
 ## 1.3. Administración del sistema
 - [Recursos computacionales para Linux](#recursos)
 - [Tipos de Instalación](#instalacion)
@@ -72,12 +71,322 @@ La partición swap, es un espacio de intercambio de ayuda a la memoria RAM a pas
 - VirtualBox from https://www.virtualbox.org
 - Vmware from https://www.vmware.com
 - Microsoft Azure from https://azure.microsoft.com/
-=======
+
+
+## Instalación de Ubuntu
+### Guía de trabajo autónomo
+
+La instalación del sistema operativo a través de los CD's o DVD, solo se necesita tener este medio de instalación e insertarlo en la unidad lectora de CD-ROM / DVD-ROM y seguir las instrucciones.
+
+### Configurando el idioma
+
+Las versiones Linux basadas en Red Hat cuentan con un asistente gráfico llamado Anaconda.
+Seleccione el idioma predeterminado que tendrá el sistema operativo como se muestra en la figura.
+Como próximo paso presione el botón “Instalar Ubuntu”.
+
+### Configurando el teclado
+
+Seleccione el teclado como se muestra a continuación. Para el idioma Español existen diferentes distribuciones de teclado, las cuales varían por la ubicación de los signos de puntuación. Para conocer la distribución del teclado solo es necesario conocer la ubicación del carácter “@”, para la distribución español el “@” se encuentra en tecla “2”, para la distribución latinoamericana la “@” se encuentra en tecla “Q”.
+
+### Configurando las particiones
+
+Antes de comenzar la instalación, el asistente solicitará partición del disco duro en la cual se instalará el sistema operativo. Se muestran las siguientes opciones: 
+Borrar disco e  instalar Ubuntu.- Borra todos sus programas, documentos, fotos, música y demás archivos en todos los sistemas operativos únicamente de la máquina virtual que está creando. 
+Más opciones.- Permite particionar el disco duro de forma manual.
+
+Al seleccionar la opción más opciones, se mostrará la siguiente ventana, que es una herramienta para particionar el disco duro. Para crear una partición, presione el botón “Nueva tabla de particiones”.
+
+Después se mostrará una ventana de diálogo en la cual  deberá pulsar en “Continuar” para configurar las particiones, como se muestra en la segunda imagen.
+Posteriormente presione el botón con el signo “+” que se encuentra en la esquina inferior izquierda.
+
+A continuación se mostrará una ventana en donde se pueden cambiar las siguientes opciones:
+
+Tamaño (MB).- Define el tamaño en Megabytes (MB) de la  partición.
+Tipo de la nueva partición.- Se presentan dos opciones: lógica o primaria. Las particiones lógicas se recomiendan para el directorio raíz y para la memoria de intercambio (swap).
+Punto de montaje.- Define el sistema de archivos que se instalará en ésta partición.
+
+### Configurando la zona horaria
+
+En esta parte se recomienda seleccionar la ubicación en la cual se encuentra el servidor para configurar la zona horaria, esto con el fin de tener sincronizada la fecha y hora del equipo.
+
+### Configurando la contraseña de administrador
+
+Definir la contraseña de “root” con privilegios de administrador, se recomienda que esta contraseña contenga caracteres alfanuméricos.
+
+## Instalación de Ubuntu
+### Bienvenido a Ubuntu
+
+Finalmente, espere a que se realice la instalación de Ubuntu para poder hacer uso del sistema operativo.
+
+## Shell
+
+Cuando se ejecuta una aplicación de terminal y aparece un shell, que muestra una parte importante de la interfaz - el “prompt”. 
+Normalmente, el mensaje contiene información sobre el usuario y el sistema. A continuación se muestra una estructura de aviso común:
+
+El prompt que se muestra, contiene la siguiente información:
+Username (sysadmin)
+System name (localhost)
+Current Directory (~)
+
+## Comandos
+
+Un comando es un programa de software que, cuando se ejecuta en la CLI, realiza una acción en la computadora.
+
+Para ejecutar un comando, el primer paso es escribir el nombre del comando.
+
+Si usted escribe ls y presiona Enter. El resultado debería parecerse al siguiente ejemplo:
+
+Algunos comandos requieren una entrada adicional para ejecutarse correctamente.
+
+Esta entrada adicional viene en dos formas: opciones y argumentos.
+Las opciones se utilizan para modificar el comportamiento central de un comando.
+Los argumentos se utilizan para proporcionar información adicional (como un nombre de archivo o un nombre de usuario).
+El formato típico para un comando es el siguiente:
+
+### Opciones
+
++ Las opciones se pueden usar con Comandos para expandir o modificar el comportamiento de un comando.
+Por ejemplo, usando la opción -l del comando ls da como resultado una lista extensa, que proporciona información adicional sobre los archivos que se enumeran.
+
++ A menudo, el caracter se elige la letra l para mostrar más información o r por reversa.
+
++ Las opciones se pueden usar junto con otras opciones:   
+
++ Las opciones suelen ser letras simples; sin embargo, a veces también son palabras o frases.
++ Por lo general, los Comandos más antiguos usan letras simples, mientras que los comandos más nuevos usan palabras completas para las opciones.
++ Por lo general, los Comandos más antiguos usan letras simples, mientras que los comandos más nuevos usan palabras completas para las opciones. -h .
++ Las opciones de palabras completas están precedidas por dos guiones -- , caracteres como la forma de palabras completas de la opción  -h, la opción de --human-readable 
+
+### Argumentos
+
+Se puede usar un argumento para especificar algo sobre lo que el comando debe actuar.
+
+Si el comando ls recibe el nombre de un directorio como argumento, enumera el contenido de ese directorio:
+
+Algunos comandos (como ls) aceptan múltiples argumentos:
+
+### Historial de comandos
+
++ Cuando se ejecuta un comando en el terminal, se almacena en una lista de historial.
++ Esto facilita la ejecución del mismo comando más tarde, eliminando la necesidad de volver a escribir todo el comando.
++ Al presionar la tecla de flecha hacia arriba  ↑ se muestra el comando anterior en la línea de solicitud.
++ Para ver la lista de historial completa de una terminal, use el comando  history.
+
+### Historial de comandos
+
++ Si el comando deseado está en la lista que genera el comando de historial history , se puede ejecutar escribiendo un signo de exclamación ! y luego el número al lado del comando (es decir,! 3) (i.e., !3)
+
++ Si el comando de historial pasa un número como argumento, genera ese número de comandos anteriores de la lista de historial.
+
++ Para ejecutar el tipo de comando más reciente !! y presiona Enter: 
++ Para ejecutar la iteración más reciente de un comando específico, escriba !command y presione Enter.
+
+### Visualización de páginas del manual
+
++ Para ver una página del comando man, use el comando man:
+
++ Por ejemplo, a continuación se muestra la página del comando man ls:
+
++ Navegue por el documento con las teclas de flecha:
+
++ Para salir de ver una página de manual, use la tecla Q.
+
+## Visualización de páginas del manual
+
+El comando man usa un localizador para mostrar documentos. Por lo general, este localizador es el comando less, pero en algunas distribuciones, puede ser el comando more. Ambos son muy similares en su desempeño.
+
+## Encontrar comandos y documentación
+
+Para buscar la ubicación de un comando o las páginas del comando man, use el comando whereis.
+
+Este comando busca comandos, archivos de origen y páginas de manual en ubicaciones específicas donde estos archivos se almacenan normalmente:
+
+Las páginas de manual se distinguen fácilmente de los comandos, ya que generalmente se comprimen con un programa llamado gzip, lo que da como resultado un nombre de archivo que termina en .gz.
+
+## Encontrar cualquier archivo o directorio
+
++ Para buscar cualquier archivo o directorio, use el comando locate.
+
++ Este comando busca en una base de datos de todos los archivos y directorios que estaban en el sistema cuando se creó la base de datos.
+Sin embargo, los archivos creados ese día no se podrán buscar con el comando de localizar porque la base de datos se actualiza todas las noches.
+Es posible actualizar la base de datos de locate manualmente ejecutando el comando updatedb como root.
+
++ El resultado puede ser bastante grande, por lo que puede ser útil utilizar las siguientes opciones:
+La opción -c del comando locate mostrará cuántos archivos coinciden:
+
++ La opción -b solo incluye listados que tienen el término de búsqueda en el nombre base del nombre del archivo. Para limitar aún más la salida, coloque un caracter \ delante del término de búsqueda:
+
+## Documentación de información
+
++ Para mostrar la documentación de información de un comando, use el comando de información:
+
++ Para mostrar la documentación de información de un comando, use el comando de información:
+
++ Esta documentación se divide en nodos. En el ejemplo a continuación, la línea resaltada en blanco muestra que está actualmente en el nodo de invocación ls:
+
+## Usar la opción de ayuda
+
+Muchos comandos proporcionarán información básica, muy similar a la SINOPSIS que se encuentra en las páginas de manual, simplemente usando la opción --help para el comando.
+
+## Estructura de directorios
+
+En un sistema Windows, el nivel superior de la estructura de directorios se llama Mi PC.
+
+La estructura de directorios de Linux, llamada sistema de archivos, también tiene un nivel superior llamado directorio raíz (simbolizado por la character slash /)
+
+Para ver el contenido del directorio root, use el comando ls con el caracter / como argumento:
+
+
+Observe que hay muchos directorios con nombres descriptivos que incluyen /boot, que contiene archivos para iniciar la computadora.
+
+## Directorio Home
+
++ En la mayoría de las distribuciones de Linux hay un directorio llamado home debajo del directorio root /.
+
++ Debajo de este directorio /home hay un directorio para cada usuario en el sistema.
+
++ Cuando un usuario abre un shell, debe colocarse automáticamente en su directorio de inicio.
+El usuario tiene el control total para crear y eliminar archivos y directorios adicionales en su directorio de inicio.
++ La mayoría de los otros directorios en un sistema de archivos Linux están protegidos con permisos de archivo.
+
++ El directorio home tiene un símbolo especial utilizado para representarlo, el caracter tilde ~.
+
++ El nombre del directorio es el mismo que el nombre del usuario.
+
++ Entonces, un usuario llamado sysadmin tendría un directorio de inicio llamado /home/sysadmin:
+
+## Directorio actual
+
+El comando pwd (directorio de trabajo de impresión) se puede utilizar para determinar dónde se encuentra actualmente el usuario dentro del sistema de archivos.
+
+El comando pwd imprime el directorio de trabajo, que es la ubicación actual del usuario dentro del sistema de archivos.
+
+## Cambiar directorios
+
++ Cuando un usuario abre un shell, generalmente comienza en su directorio home.
+
++ Para navegar por el sistema de archivos, use el comando cd (cambiar directorio).
+
++ Para pasar del directorio actual al directorio Documentos, use el nombre del directorio como argumento para el comando cd:
+
++ Después de cambiar los directorios, la nueva ubicación también se puede confirmar en el nuevo prompt, que se muestra nuevamente en azul en la imagen anterior.
+
+## Cambiar directorios
+
++ Cuando se usa sin argumentos, el comando cd llevará al usuario a su directorio de inicio.
++ Si el usuario intenta cambiar a un directorio que no existe, el comando devuelve un mensaje de error:
+
+## Rutas
+
+Una ruta es una lista de directorios separados por el carácter /.
+
+Hay dos tipos de rutas: absolutas y relativas.
+
+Por ejemplo, /home/sysadmin es una ruta al directorio de inicio:
+
+### Rutas absolutas
+
+
+Las rutas absolutas permiten al usuario especificar la ubicación exacta de un directorio.
+
+Las rutas absolutas siempre comienzan en el directorio root y, por lo tanto, siempre comienzan con el carácter /.
+
+La ruta /home/sysadmin es una ruta absoluta; le dice al sistema que:
+Comience en el directorio root / > muévase al directorio home > luego al directorio sysadmin.
+
+Si la ruta /home/sysadmin se usa como argumento para el comando cd, mueve al usuario al directorio de inicio del usuario sysadmin.
+
+### Rutas relativas
+
+Una ruta relativa da instrucciones a un archivo en relación con la ubicación actual en el sistema de archivos.
+
+El usuario debe estar actualmente en un directorio que contiene objetos en la ruta.
+
+Las rutas relativas comienzan con el nombre de un directorio
+
+### Rutas - Atajos: Los caracteres .
+
+Los caracteres dos puntos ... siempre representan un directorio más alto en relación con el directorio actual, a veces denominado directorio padre.
+
+Por ejemplo, para volver del directorio Art al directorio de la School:
+
+
+El doble punto también se puede usar en rutas más largas:
+
+### Rutas - Atajos: El caracter .
+
+El caracter “.” representa el directorio actual.
+
+Para el comando cd, este acceso directo no es muy útil, pero es útil para los comandos cubiertos en las secciones posteriores.
+
+## Copiar archivos
+
+El comando cp se usa para copiar archivos. Requiere una fuente y un destino.
+
+La estructura del comando es la siguiente:
+
+
+La fuente es el archivo que se copiará. El destino es donde se ubicará la copia.
+
+El siguiente comando copiará el archivo /etc/hosts a su directorio de inicio:
+
+## Mover archivos
+
+Para mover un archivo, use el comando mv.
+
+La sintaxis para el comando mv es muy similar al comando cp:
 
 
 
+Cuando se mueve un archivo, el archivo se elimina de la ubicación original y se coloca en una nueva ubicación.
+
+Nota: Si no tiene los permisos correctos, recibirá un mensaje de error "Permiso denegado".
 
 
+## Crear directorios
+
+Para crear un directorio, use el comando mkdir:
+
+## Eliminar directorios
+
+El comando rm se puede usar para eliminar directorios. Sin embargo, el uso predeterminado (sin opciones) del comando rm no podrá eliminar un directorio:
+
+Para eliminar un directorio, use la opción -r (recursiva) para el comando rm:
+
+Importante: cuando un usuario elimina un directorio, todos los archivos y subdirectorios se eliminan sin ninguna pregunta interactiva. Es mejor usar la opción   -i con el comando rm.
+
+## Comprimir archivos
+
+Linux proporciona varias herramientas para comprimir archivos, el más común es gzip. Aquí mostramos un archivo antes y después de la compresión:
+
+
+El tamaño original del archivo llamado longfile.txt es 66540 bytes.
+El archivo se comprime invocando el comando gzip con el nombre del archivo como argumento.
+Una vez que se completa ese comando, el archivo original desaparece y se deja en su lugar una versión comprimida con una extensión de archivo .gz.
+El tamaño del archivo ahora es de 341 bytes.
+
+## Almacenar archivos - Modo crear
+
+Crear un archivo con el comando tar requiere dos opciones con nombre:
+
+
+El siguiente ejemplo muestra un archivo tar, también llamado tarball, que se crea a partir de múltiples archivos:
+
+## Almacenar archivos - Modo extraer
+
+Puede extraer el archivo con la opción –x una vez que se haya copiado en un directorio diferente. El siguiente ejemplo utiliza un patrón similar al de los otros modos:
+
+El siguiente ejemplo extrae el contenido del archivo folder.tbz:
+
+## Archivos ZIP
+
+El archivo ZIP es la utilidad de almacenamiento predeterminada en Microsoft.
+ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y descomprimir.
+El modo predeterminado de zip es agregar archivos a un archivo comprimido y comprimirlo.
+
+El siguiente ejemplo muestra un archivo comprimido llamado alpha_files.zip que se está creando:
+
+El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
 
 Administración del sistema
 
@@ -164,4 +473,3 @@ Bare-Metal Deployment, es un sistema informático o una red en la que una máqui
 
 
 
->>>>>>> Stashed changes

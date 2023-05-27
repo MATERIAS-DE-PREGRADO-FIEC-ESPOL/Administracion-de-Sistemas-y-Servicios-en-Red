@@ -172,8 +172,6 @@ Las distribuciones modernas cuentan con:
 
 - [Linux From Scratch (LFS)](https://www.linuxfromscratch.org/) consiste en un libro en línea, código fuente e instrucciones para construir una distribución Linux personalizada.
 
-
-
 <a name="referencias"> </a>
 ## 📚 Referencias
 * Linux: The Complete Reference, Sixth Edition by Richard Petersen
