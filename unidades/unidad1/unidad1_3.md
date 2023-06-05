@@ -38,8 +38,7 @@ Al finalizar la clase el estudiante será capaz de:
 - [Mover archivos](#mover)
 - [Comprimir archivos](#comprimir)
 - [Almacenar archivos](#almacenar)
-- [Archivos ZIP](#almacenar)
-
+- [Archivos ZIP](#zip)
 - [Referencias](#referencias)
 
 <a name="recursos"> </a>
@@ -457,15 +456,23 @@ El caracter “.” representa el directorio actual.
 
 Para el comando cd, este acceso directo no es muy útil, pero es útil para los comandos cubiertos en las secciones posteriores.
 
-- [Crear directorios](#crear)
-- [Eliminar directorios](#Eliminar)
-- [Copiar archivos](#copiar)
-- [Mover archivos](#mover)
-- [Comprimir archivos](#comprimir)
-- [Almacenar archivos](#almacenar)
-- [Archivos ZIP](#almacenar)
 
-## Copiar archivos
+<a name="crear"> </a>
+## 💻 Crear directorios
+
+Para crear un directorio, use el comando mkdir:
+
+<a name="eliminar"> </a>
+## 💻 Eliminar directorios
+
+El comando rm se puede usar para eliminar directorios. Sin embargo, el uso predeterminado (sin opciones) del comando rm no podrá eliminar un directorio:
+
+Para eliminar un directorio, use la opción -r (recursiva) para el comando rm:
+
+Importante: cuando un usuario elimina un directorio, todos los archivos y subdirectorios se eliminan sin ninguna pregunta interactiva. Es mejor usar la opción   -i con el comando rm.
+
+<a name="copiar"> </a>
+## 💻 Copiar archivos
 
 El comando cp se usa para copiar archivos. Requiere una fuente y un destino.
 
@@ -476,7 +483,9 @@ La fuente es el archivo que se copiará. El destino es donde se ubicará la copi
 
 El siguiente comando copiará el archivo /etc/hosts a su directorio de inicio:
 
-## Mover archivos
+
+<a name="mover"> </a>
+## 💻 Mover archivos
 
 Para mover un archivo, use el comando mv.
 
@@ -489,19 +498,8 @@ Cuando se mueve un archivo, el archivo se elimina de la ubicación original y se
 Nota: Si no tiene los permisos correctos, recibirá un mensaje de error "Permiso denegado".
 
 
-## Crear directorios
-
-Para crear un directorio, use el comando mkdir:
-
-## Eliminar directorios
-
-El comando rm se puede usar para eliminar directorios. Sin embargo, el uso predeterminado (sin opciones) del comando rm no podrá eliminar un directorio:
-
-Para eliminar un directorio, use la opción -r (recursiva) para el comando rm:
-
-Importante: cuando un usuario elimina un directorio, todos los archivos y subdirectorios se eliminan sin ninguna pregunta interactiva. Es mejor usar la opción   -i con el comando rm.
-
-## Comprimir archivos
+<a name="comprimir"> </a>
+## 💻 Comprimir archivos
 
 Linux proporciona varias herramientas para comprimir archivos, el más común es gzip. Aquí mostramos un archivo antes y después de la compresión:
 
@@ -511,12 +509,14 @@ El archivo se comprime invocando el comando gzip con el nombre del archivo como 
 Una vez que se completa ese comando, el archivo original desaparece y se deja en su lugar una versión comprimida con una extensión de archivo .gz.
 El tamaño del archivo ahora es de 341 bytes.
 
-## Almacenar archivos - Modo crear
+<a name="almacenar"> </a>
+## 💻 Almacenar archivos
 
 Crear un archivo con el comando tar requiere dos opciones con nombre:
 
 
 El siguiente ejemplo muestra un archivo tar, también llamado tarball, que se crea a partir de múltiples archivos:
+
 
 ## Almacenar archivos - Modo extraer
 
@@ -524,15 +524,18 @@ Puede extraer el archivo con la opción –x una vez que se haya copiado en un d
 
 El siguiente ejemplo extrae el contenido del archivo folder.tbz:
 
-## Archivos ZIP
+<a name="zip"> </a>
+## 💻 Archivos ZIP
 
-El archivo ZIP es la utilidad de almacenamiento predeterminada en Microsoft.
+- El archivo ZIP es la utilidad de almacenamiento predeterminada en Microsoft.
 ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y descomprimir.
-El modo predeterminado de zip es agregar archivos a un archivo comprimido y comprimirlo.
 
-El siguiente ejemplo muestra un archivo comprimido llamado alpha_files.zip que se está creando:
+- El modo predeterminado de zip es agregar archivos a un archivo comprimido y comprimirlo.
 
-El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
+- El siguiente ejemplo muestra un archivo comprimido llamado alpha_files.zip que se está creando:
+
+- El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
+
 
 Administración del sistema
 
