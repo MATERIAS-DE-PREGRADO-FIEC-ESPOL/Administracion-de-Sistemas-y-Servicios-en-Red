@@ -404,7 +404,7 @@ bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
 ```
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_rutas.png" alt="industria" width="70%">
+  <img src="../imagenes/assr_unidad1_3_rutas.png" alt="industria" width="100%">
 </p>
 
 
