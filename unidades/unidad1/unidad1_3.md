@@ -20,9 +20,25 @@ Al finalizar la clase el estudiante será capaz de:
     - [Argumentos](#argumentos)
 - [Historial](#historial)
 - [Manual](#Manual)
-- [Búsqueda de comandos](#busqueda)
-
-
+- [Búsqueda de comandos y documentación](#busqueda_comandos)
+- [Búsqueda de archivos o directorios](#busqueda_archivos)
+- [Documentación de información](#documentacion)
+- [Opción de ayuda](#ayuda)
+- [Estructura de directorios](#estructura)
+  - [Directorio Home](#home)
+  - [Directorio actual](#actual)
+- [Cambiar directorios](#cambiar)
+- [Rutas](rutas)
+  - [Rutas absolutas](#absolutas)
+  - [Rutas relativas](#relativas)
+  - [Atajos](#atajos)
+- [Crear directorios](#crear)
+- [Eliminar directorios](#Eliminar)
+- [Copiar archivos](#copiar)
+- [Mover archivos](#mover)
+- [Comprimir archivos](#comprimir)
+- [Almacenar archivos](#almacenar)
+- [Archivos ZIP](#almacenar)
 
 - [Referencias](#referencias)
 
@@ -197,98 +213,186 @@ Current Directory ```~```
 
 - Para ver una página del comando man, use el comando man:
 
+```
+man command
+```
+
 - Por ejemplo, a continuación se muestra la página del comando man ls:
+
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_man.png" alt="industria" width="70%">
+</p>
+
+***Importante: El comando man usa un localizador para mostrar documentos. Por lo general, este localizador es el comando less, pero en algunas distribuciones, puede ser el comando more. Ambos son muy similares en su desempeño.***
 
 - Navegue por el documento con las teclas de flecha:
 
-- Para salir de ver una página de manual, use la tecla Q.
+- Para salir de ver una página de manual, use la tecla **Q**.
 
-## Visualización de páginas del manual
 
-El comando man usa un localizador para mostrar documentos. Por lo general, este localizador es el comando less, pero en algunas distribuciones, puede ser el comando more. Ambos son muy similares en su desempeño.
+<a name="busqueda_comandos"> </a>
+## 💻 Búsqueda de comandos y documentación
 
-## Encontrar comandos y documentación
-
-Para buscar la ubicación de un comando o las páginas del comando man, use el comando whereis.
+Para buscar la ubicación de un comando o las páginas del comando man, use el comando ```whereis```.
 
 Este comando busca comandos, archivos de origen y páginas de manual en ubicaciones específicas donde estos archivos se almacenan normalmente:
 
-Las páginas de manual se distinguen fácilmente de los comandos, ya que generalmente se comprimen con un programa llamado gzip, lo que da como resultado un nombre de archivo que termina en .gz.
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_whereis.png" alt="industria" width="70%">
+</p>
 
-## Encontrar cualquier archivo o directorio
+Las páginas de manual se distinguen fácilmente de los comandos, ya que generalmente se comprimen con un programa llamado ```gzip```, lo que da como resultado un nombre de archivo que termina en .gz.
 
-+ Para buscar cualquier archivo o directorio, use el comando locate.
 
-+ Este comando busca en una base de datos de todos los archivos y directorios que estaban en el sistema cuando se creó la base de datos.
+<a name="busqueda_archivos"> </a>
+## 💻 Búsqueda de archivos o directorios
+- Para buscar cualquier archivo o directorio, use el comando locate.
+
+- Este comando busca en una base de datos de todos los archivos y directorios que estaban en el sistema cuando se creó la base de datos.
 Sin embargo, los archivos creados ese día no se podrán buscar con el comando de localizar porque la base de datos se actualiza todas las noches.
-Es posible actualizar la base de datos de locate manualmente ejecutando el comando updatedb como root.
+Es posible actualizar la base de datos de ```locate``` manualmente ejecutando el comando ```updatedb``` como root.
 
-+ El resultado puede ser bastante grande, por lo que puede ser útil utilizar las siguientes opciones:
-La opción -c del comando locate mostrará cuántos archivos coinciden:
+- El resultado puede ser bastante grande, por lo que puede ser útil utilizar las siguientes opciones:
+La opción -c del comando ```locate``` mostrará cuántos archivos coinciden:
 
-+ La opción -b solo incluye listados que tienen el término de búsqueda en el nombre base del nombre del archivo. Para limitar aún más la salida, coloque un caracter \ delante del término de búsqueda:
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_locate.png" alt="industria" width="70%">
+</p>
 
-## Documentación de información
+  - La opción -b solo incluye listados que tienen el término de búsqueda en el nombre base del nombre del archivo. Para limitar aún más la salida, coloque un caracter \ delante del término de búsqueda:
 
-+ Para mostrar la documentación de información de un comando, use el comando de información:
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_locate_especifico.png" alt="industria" width="70%">
+</p>
 
-+ Para mostrar la documentación de información de un comando, use el comando de información:
 
-+ Esta documentación se divide en nodos. En el ejemplo a continuación, la línea resaltada en blanco muestra que está actualmente en el nodo de invocación ls:
+<a name="documentacion"> </a>
+## 💻 Documentación de información
 
-## Usar la opción de ayuda
+- Para mostrar la documentación de información de un comando, use el comando de información:
+
+```
+[acollaguazo@localhost ~]$ info dd
+```
+
+- Esta documentación se divide en nodos. En el ejemplo a continuación, la línea resaltada muestra que está actualmente en el nodo de invocación ls
+
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_info_dd.png" alt="industria" width="70%">
+</p>
+
+- Puede navegar por el documento con las teclas de flecha. 
+
+
+<a name="ayuda"> </a>
+## 💻 Opción de ayuda
 
 Muchos comandos proporcionarán información básica, muy similar a la SINOPSIS que se encuentra en las páginas de manual, simplemente usando la opción --help para el comando.
 
-## Estructura de directorios
-
-En un sistema Windows, el nivel superior de la estructura de directorios se llama Mi PC.
-
-La estructura de directorios de Linux, llamada sistema de archivos, también tiene un nivel superior llamado directorio raíz (simbolizado por la character slash /)
-
-Para ver el contenido del directorio root, use el comando ls con el caracter / como argumento:
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_help.png" alt="industria" width="70%">
+</p>
 
 
-Observe que hay muchos directorios con nombres descriptivos que incluyen /boot, que contiene archivos para iniciar la computadora.
+<a name="estructura"> </a>
+## 💻 Estructura de directorios
 
-## Directorio Home
+- En un sistema Windows, el nivel superior de la estructura de directorios se llama Mi PC.
 
-+ En la mayoría de las distribuciones de Linux hay un directorio llamado home debajo del directorio root /.
+- La estructura de directorios de Linux, llamada sistema de archivos, también tiene un nivel superior llamado directorio raíz (simbolizado por la character slash **/**).
 
-+ Debajo de este directorio /home hay un directorio para cada usuario en el sistema.
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
+</p>
 
-+ Cuando un usuario abre un shell, debe colocarse automáticamente en su directorio de inicio.
-El usuario tiene el control total para crear y eliminar archivos y directorios adicionales en su directorio de inicio.
-+ La mayoría de los otros directorios en un sistema de archivos Linux están protegidos con permisos de archivo.
+- Para ver el contenido del directorio root, use el comando ```ls``` con el caracter ```/``` como argumento:
 
-+ El directorio home tiene un símbolo especial utilizado para representarlo, el caracter tilde ~.
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
+</p>
 
-+ El nombre del directorio es el mismo que el nombre del usuario.
+Observe que hay muchos directorios con nombres descriptivos que incluyen ```/boot```, que contiene archivos para iniciar la computadora.
 
-+ Entonces, un usuario llamado sysadmin tendría un directorio de inicio llamado /home/sysadmin:
 
-## Directorio actual
+<a name="home"> </a>
+### 🕸️ Directorio Home
 
-El comando pwd (directorio de trabajo de impresión) se puede utilizar para determinar dónde se encuentra actualmente el usuario dentro del sistema de archivos.
+- En la mayoría de las distribuciones de Linux hay un directorio llamado home debajo del directorio root /.
 
-El comando pwd imprime el directorio de trabajo, que es la ubicación actual del usuario dentro del sistema de archivos.
+- Debajo de este directorio ```/home``` hay un directorio para cada usuario en el sistema.
 
-## Cambiar directorios
+- Cuando un usuario abre un shell, debe colocarse automáticamente en su directorio de inicio.
+  - El usuario tiene el control total para crear y eliminar archivos y directorios adicionales en su directorio de inicio.
+  - La mayoría de los otros directorios en un sistema de archivos Linux están protegidos con permisos de archivo.
 
-+ Cuando un usuario abre un shell, generalmente comienza en su directorio home.
+- El directorio home tiene un símbolo especial utilizado para representarlo, el caracter tilde ```~```.
 
-+ Para navegar por el sistema de archivos, use el comando cd (cambiar directorio).
+- El nombre del directorio es el mismo que el nombre del usuario.
 
-+ Para pasar del directorio actual al directorio Documentos, use el nombre del directorio como argumento para el comando cd:
+- Entonces, un usuario llamado ```acollaguazo``` tendría un directorio de inicio llamado ```/home/acollaguazo```:
 
-+ Después de cambiar los directorios, la nueva ubicación también se puede confirmar en el nuevo prompt, que se muestra nuevamente en azul en la imagen anterior.
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_home_acollaguazo.png" alt="industria" width="70%">
+</p>
 
-## Cambiar directorios
 
-+ Cuando se usa sin argumentos, el comando cd llevará al usuario a su directorio de inicio.
-+ Si el usuario intenta cambiar a un directorio que no existe, el comando devuelve un mensaje de error:
+<a name="actual"> </a>
+### 🕸️ Directorio actual
 
-## Rutas
+```
+pwd [OPTIONS]
+```
+
+El comando ```pwd``` (directorio de trabajo de impresión) se puede utilizar para determinar dónde se encuentra actualmente el usuario dentro del sistema de archivos.
+
+El comando ```pwd``` imprime el directorio de trabajo, que es la ubicación actual del usuario dentro del sistema de archivos.
+
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_pwd.png" alt="industria" width="70%">
+</p>
+
+
+<a name="cambiar"> </a>
+## 💻 Cambiar directorios
+
+- Cuando un usuario abre un shell, generalmente comienza en su directorio home.
+
+- Para navegar por el sistema de archivos, use el comando cd (cambiar directorio).
+
+```
+cd [options] [path]
+```
+
+- Para pasar del directorio actual al directorio Documentos, use el nombre del directorio como argumento para el comando ```cd```:
+
+```
+[acollaguazo@localhost ~]$ cd Descargas/
+[acollaguazo@localhost Descargas]$
+```
+
+- Después de cambiar los directorios, la nueva ubicación también se puede confirmar en el nuevo prompt, que se muestra nuevamente en azul en la imagen anterior.
+
+
+
+- Cuando se usa sin argumentos, el comando ```cd``` llevará al usuario a su directorio de inicio.
+
+```
+[acollaguazo@localhost Descargas]$ cd
+[acollaguazo@localhost ~]$ 
+```
+
+- Si el usuario intenta cambiar a un directorio que no existe, el comando devuelve un mensaje de error:
+
+```
+[acollaguazo@localhost ~]$ cd acollaguazo
+bash: cd: acollaguazo: No existe el fichero o el directorio
+```
+
+
+
+
+<a name="rutas"> </a>
+## 💻 Rutas
 
 Una ruta es una lista de directorios separados por el carácter /.
 
@@ -296,27 +400,42 @@ Hay dos tipos de rutas: absolutas y relativas.
 
 Por ejemplo, /home/sysadmin es una ruta al directorio de inicio:
 
-### Rutas absolutas
+
+<a name="absolutas"> </a>
+### 🕸️ Rutas absolutas
+
+- Las rutas absolutas permiten al usuario especificar la ubicación exacta de un directorio.
+
+- Las rutas absolutas siempre comienzan en el directorio root y, por lo tanto, siempre comienzan con el carácter ```/```.
+
+- La ruta ```/home/sysadmin``` es una ruta absoluta; le dice al sistema que:
+  - Comience en el directorio root / > muévase al directorio home > luego al directorio acollaguazo.
+
+Si la ruta ```/home/acollaguazo``` se usa como argumento para el comando cd, mueve al usuario al directorio de inicio del usuario acollaguazo.
+
+```
+[acollaguazo@localhost ~]$ cd /home/acollaguazo
+[acollaguazo@localhost ~]$ 
+```
 
 
-Las rutas absolutas permiten al usuario especificar la ubicación exacta de un directorio.
+<a name="relativas"> </a>
+### 🕸️ Rutas relativas
 
-Las rutas absolutas siempre comienzan en el directorio root y, por lo tanto, siempre comienzan con el carácter /.
+- Una ruta relativa da instrucciones a un archivo en relación con la ubicación actual en el sistema de archivos.
 
-La ruta /home/sysadmin es una ruta absoluta; le dice al sistema que:
-Comience en el directorio root / > muévase al directorio home > luego al directorio sysadmin.
+- El usuario debe estar actualmente en un directorio que contiene objetos en la ruta.
 
-Si la ruta /home/sysadmin se usa como argumento para el comando cd, mueve al usuario al directorio de inicio del usuario sysadmin.
+- Las rutas relativas comienzan con el nombre de un directorio:
 
-### Rutas relativas
+```
+[acollaguazo@localhost etc]$ cd sysconfig/network-scripts/
+[acollaguazo@localhost network-scripts]$ 
+```
 
-Una ruta relativa da instrucciones a un archivo en relación con la ubicación actual en el sistema de archivos.
 
-El usuario debe estar actualmente en un directorio que contiene objetos en la ruta.
-
-Las rutas relativas comienzan con el nombre de un directorio
-
-### Rutas - Atajos: Los caracteres .
+<a name="atajos"> </a>
+### 🕸️ Atajos
 
 Los caracteres dos puntos ... siempre representan un directorio más alto en relación con el directorio actual, a veces denominado directorio padre.
 
@@ -325,11 +444,18 @@ Por ejemplo, para volver del directorio Art al directorio de la School:
 
 El doble punto también se puede usar en rutas más largas:
 
-### Rutas - Atajos: El caracter .
 
 El caracter “.” representa el directorio actual.
 
 Para el comando cd, este acceso directo no es muy útil, pero es útil para los comandos cubiertos en las secciones posteriores.
+
+- [Crear directorios](#crear)
+- [Eliminar directorios](#Eliminar)
+- [Copiar archivos](#copiar)
+- [Mover archivos](#mover)
+- [Comprimir archivos](#comprimir)
+- [Almacenar archivos](#almacenar)
+- [Archivos ZIP](#almacenar)
 
 ## Copiar archivos
 
