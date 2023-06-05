@@ -389,16 +389,24 @@ bash: cd: acollaguazo: No existe el fichero o el directorio
 ```
 
 
-
-
 <a name="rutas"> </a>
 ## 💻 Rutas
 
-Una ruta es una lista de directorios separados por el carácter /.
+Una ruta es una lista de directorios separados por el carácter ```/```.
 
 Hay dos tipos de rutas: absolutas y relativas.
 
-Por ejemplo, /home/sysadmin es una ruta al directorio de inicio:
+Por ejemplo, ```/home/acollaguazo``` es una ruta al directorio de inicio:
+
+```
+[acollaguazo@localhost /]$ ls
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+```
+
+<p align="center">
+  <img src="../imagenes/assr_unidad1_3_rutas.png" alt="industria" width="70%">
+</p>
 
 
 <a name="absolutas"> </a>
