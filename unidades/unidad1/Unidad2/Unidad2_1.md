@@ -138,5 +138,70 @@ local_enable=YES  #
 #chroot_local_user=YES	#Descomentar está línea quitandole el símbolo numeral
 
 ````
+**Paso 3. Reiniciar el servicio**
+´
+````
+[root@srv1-linux adita]#service vsftpd restart
+````
 
+# PROTOCOLO DNS (DOMAIN NAME SERVICE)
+
+**DNS (Domain Name Service)**
+
+Convierte nombres de máquinas a direcciones IP, es decir, mapea de una  nombre a una dirección y viceversa. Hay varios servicios que puede  utilizar para resolver direcciones IP. El más utilizado es Berkeley Internet  Name Domain service (BIND). Al configurar la biblioteca de resolución  para utilizar el servicio de nombres DNS para las búsquedas de host,  también tiene que indicar qué servidores de nombres utilizar. Hay un  archivo separado para esto llamado /etc/resolv.conf. Utiliza el  protocolo TCP/UDP con el puerto 53.
+La configuración DNS más importante son las zonas de dominios que se  encuentran en el archivo /etc/named.conf. Entre los registros de  configuración de zonas se encuentran:
+A: Este registro asocia una dirección IP con un nombre de host.  MX: Un intercambiador de correo para un dominio.
+CNAME: Este registro asocia un alias con el nombre de host canónico de  un host.
+PTR: Este tipo de registro se utiliza para asociar nombres en el dominio  in-addr.arpa con nombres de host.
+
++ Paquete del servicio dns: bind, bind-chroot, bind-utils
+
++ Archivo de configuración de zona de dominio 
+
+````
+vbrew: /etc/named.conf
+zone "vbrew.com" {
+type master;  allow-transfer { 10.10.0.5;
+172.16.90.4;
+1.2.3.4;
+};
+file "/etc/bind/db.vbrew.com";
+};
+zone "0.168.192.in-addr.arpa" {  type master;
+file "/etc/bind/db.192.168.0";
+````
+
+## **PROTOCOLOS SMTP/POP/IMAP**
+
+**Correo**.-
+El servidor de correo proporcionan a los usuarios servicios de correo electrónico. Ellos  tienen sus propios protocolos TCP/IP tales como el Simple Mail Transfer Protocol (SMTP),  Post Office Protocol (POP), Internet Mail Access Protocol (IMAP). Muchas distribuciones  de Linux instalarán y configurarán automáticamente sendmail o postfix. También puede  configurar su sistema Linux para ejecutar un servidor POP. Dichos servidores de correo  están asociados con diferentes hosts mediante registros de intercambio de correo,  conocidos como registros MX, en la configuración DNS de una red. Utiliza el protocolo  SMTP para el correo saliente con el puerto 25 y el protocolo POP para el correo  entrante con el puerto 110.
+
+**Por ejemplo:**
+name  espol.edu.ec
+class
+MX
+type
+0	espol-edu-ec.mail.protection.outlook.com
+
++ Servicio de correo saliente: sendmail
+
++ Servicio de correo entrante: dovecot
+
++ Servicio de administración vía web para el cliente de correo: SquirrelMail  https://squirrelmail.org/
+
++ Servicio de Anti-spam: SpamAssassin  http://spamassassin.apache.org/
+
+
+## PROTOCOLO DE NAVEGACIÓN
+**Proxy**
+
+Los servidores proxy operan como un  intermediario entre una red local y los  servicios disponibles en uno más grande  como Internet. Los servidores proxy  mantienen copias actuales de las páginas  web de acceso común. Squid es un servidor  gratuito, de código abierto y de caché  proxy para clientes web, diseñado para  acelerar el acceso a Internet y proporcionar  controles de seguridad para servidores web.  Utiliza el protocolo TCP, y el puerto 3128.
+
+Los protocolos soportados por squid son
+
++ Paquete: squid
+
++ Paquete para generación de reporte del squid: SARG
+
+## PROTOCOLOS DE SERVICIOS DE RED
 
