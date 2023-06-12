@@ -11,6 +11,46 @@ Al finalizar la clase el estudiante será capaz de:
 
 ## Administración del sistema
 
+<a name="comprimir"> </a>
+## 💻 Comprimir archivos
+
+Linux proporciona varias herramientas para comprimir archivos, el más común es gzip. Aquí mostramos un archivo antes y después de la compresión:
+
+
+El tamaño original del archivo llamado longfile.txt es 66540 bytes.
+El archivo se comprime invocando el comando gzip con el nombre del archivo como argumento.
+Una vez que se completa ese comando, el archivo original desaparece y se deja en su lugar una versión comprimida con una extensión de archivo .gz.
+El tamaño del archivo ahora es de 341 bytes.
+
+<a name="almacenar"> </a>
+## 💻 Almacenar archivos
+
+Crear un archivo con el comando tar requiere dos opciones con nombre:
+
+
+El siguiente ejemplo muestra un archivo tar, también llamado tarball, que se crea a partir de múltiples archivos:
+
+
+## Almacenar archivos - Modo extraer
+
+Puede extraer el archivo con la opción –x una vez que se haya copiado en un directorio diferente. El siguiente ejemplo utiliza un patrón similar al de los otros modos:
+
+El siguiente ejemplo extrae el contenido del archivo folder.tbz:
+
+<a name="zip"> </a>
+## 💻 Archivos ZIP
+
+- El archivo ZIP es la utilidad de almacenamiento predeterminada en Microsoft.
+ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y descomprimir.
+
+- El modo predeterminado de zip es agregar archivos a un archivo comprimido y comprimirlo.
+
+- El siguiente ejemplo muestra un archivo comprimido llamado alpha_files.zip que se está creando:
+
+- El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
+
+## Automatización de tareas programadas
+
 La programación de tareas de mantenimiento regulares, como las copias de seguridad, es administrada por el servicio cron en Linux. El formato del archivo /etc/crontab es el siguiente:
 
 # Un comentario inicia con el símbolo de # en cualquier parte del archivo.
