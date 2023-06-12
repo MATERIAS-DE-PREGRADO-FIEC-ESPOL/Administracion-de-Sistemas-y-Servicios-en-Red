@@ -14,23 +14,27 @@ Al finalizar la clase el estudiante será capaz de:
 - [Almacenar archivos](#almacenar)
 - [Archivos ZIP](#zip)
 - [Automatización de tareas programadas](#automatizacion)
+- [Scripting](#scripting)
+
 
 <a name="comprimir"> </a>
 ## 💻 Comprimir archivos
 
-Linux proporciona varias herramientas para comprimir archivos, el más común es gzip. Aquí mostramos un archivo antes y después de la compresión:
+- Linux proporciona varias herramientas para comprimir archivos, el más común es gzip. Aquí mostramos un archivo antes y después de la compresión:
 
+- El tamaño original del archivo llamado longfile.txt es 66540 bytes.
 
-El tamaño original del archivo llamado longfile.txt es 66540 bytes.
-El archivo se comprime invocando el comando gzip con el nombre del archivo como argumento.
-Una vez que se completa ese comando, el archivo original desaparece y se deja en su lugar una versión comprimida con una extensión de archivo .gz.
-El tamaño del archivo ahora es de 341 bytes.
+- El archivo se comprime invocando el comando gzip con el nombre del archivo como argumento.
+
+- Una vez que se completa ese comando, el archivo original desaparece y se deja en su lugar una versión comprimida con una extensión de archivo .gz.
+
+- El tamaño del archivo ahora es de 341 bytes.
+
 
 <a name="almacenar"> </a>
 ## 💻 Almacenar archivos
 
 Crear un archivo con el comando tar requiere dos opciones con nombre:
-
 
 El siguiente ejemplo muestra un archivo tar, también llamado tarball, que se crea a partir de múltiples archivos:
 
@@ -40,6 +44,7 @@ El siguiente ejemplo muestra un archivo tar, también llamado tarball, que se cr
 Puede extraer el archivo con la opción –x una vez que se haya copiado en un directorio diferente. El siguiente ejemplo utiliza un patrón similar al de los otros modos:
 
 El siguiente ejemplo extrae el contenido del archivo folder.tbz:
+
 
 <a name="zip"> </a>
 ## 💻 Archivos ZIP
@@ -53,6 +58,7 @@ ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y desc
 
 - El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
 
+
 <a name="automatizacion"> </a>
 ## 💻 Automatización de tareas programadas
 
@@ -65,6 +71,9 @@ minute  hour  day-month  month  day(s)-week   username   command to be executed
 ```
 
 Ejercicio: Para realizar la tarea de reinicio del servidor, el domingo, miércoles y viernes a las 02h00 am.
+
+<a name="scripting"> </a>
+## 💻 Scripts en Bash
 
 ## Script de un menú de administración para el servidor con linux
 
