@@ -9,7 +9,11 @@ remote_theme: pages-themes/cayman@v0.2.0
 Al finalizar la clase el estudiante será capaz de:
 - Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
-## Administración del sistema
+## 1.4. Mantenimiento y respaldo del sistema
+- [Comprimir archivos](#comprimir)
+- [Almacenar archivos](#almacenar)
+- [Archivos ZIP](#zip)
+- [Automatización de tareas programadas](#automatizacion)
 
 <a name="comprimir"> </a>
 ## 💻 Comprimir archivos
@@ -49,15 +53,16 @@ ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y desc
 
 - El comando zip no se repetirá en subdirectorios de forma predeterminada (tar lo hace), por lo que debe usar la opción –r para indicar que se va a utilizar la recursividad. El commando unzip descomprime un archivo.
 
-## Automatización de tareas programadas
+<a name="automatizacion"> </a>
+## 💻 Automatización de tareas programadas
 
 La programación de tareas de mantenimiento regulares, como las copias de seguridad, es administrada por el servicio cron en Linux. El formato del archivo /etc/crontab es el siguiente:
 
 # Un comentario inicia con el símbolo de # en cualquier parte del archivo.
-       *      *     *        *     *          
+```
+  *      *       *         *        *          
 minute  hour  day-month  month  day(s)-week   username   command to be executed
-
-
+```
 
 Ejercicio: Para realizar la tarea de reinicio del servidor, el domingo, miércoles y viernes a las 02h00 am.
 
