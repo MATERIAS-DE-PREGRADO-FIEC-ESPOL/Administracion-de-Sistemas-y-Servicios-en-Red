@@ -18,7 +18,7 @@ Utilizar los sistemas operativos basados en Linux mediante una interfaz de admin
 
 + El formato del trabajo tiene habilitado recuadros de color amarillo para que llenen las respuestas.
 + Los trabajos se reciben hasta la fecha planificada en el Aula Virtual.
-+ Coloque el nombre del archivo así **ASSR_TAA_Apellido_Nombre**, siendo A el número del trabajo, B el número del grupo, N el último apellido del integrante del grupo.
++ Coloque el nombre del archivo así **ASSR_TAA_Apellido_Nombre**, siendo A el número del trabajo.
 + Una vez que haya desarrollado el trabajo, cada integrante del grupo contestará la encuesta de evaluación de los trabajos autónomos ingresando al enlace https://bit.ly/2UdUwrj
 
 **INTRODUCCIÓN**
