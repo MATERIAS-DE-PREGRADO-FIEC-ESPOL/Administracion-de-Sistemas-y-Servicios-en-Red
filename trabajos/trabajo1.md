@@ -3,24 +3,23 @@ remote_theme: pages-themes/cayman@v0.2.0
 ---
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
-## TRABAJO AUTÓNOMO 1
+## Trabajo Autónomo 1
 
-### ADMINISTRACIÓN DE SISTEMAS OPERATIVOS BASADOS EN LINUX
+## Automatización de la administración de un servidor Linux
 
-**Objetivo de Aprendizaje:**  
-
+## 🎯 Objetivo de Aprendizaje 
 Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
-**Recursos:** VirtualBox.
+**Recursos:** VirtualBox / VMware
 
-**Duración:** 6 horas
+**Duración:** 6 horas.
 
-**INSTRUCCIONES**
+**Instrucciones**
 
 + El formato del trabajo tiene habilitado recuadros de color amarillo para que llenen las respuestas.
 + Los trabajos se reciben hasta la fecha planificada en el Aula Virtual.
-+ Coloque el nombre del archivo así “ASSR_TAA_GrupoB_Apellido1_ApellidoN”, siendo A el número del trabajo, B el número del grupo, N el último apellido del integrante del grupo.
-+ Una vez que haya desarrollado el trabajo, cada integrante del grupo contestará la encuesta de evaluación de los trabajos autónomos ingresando al enlace.  https://bit.ly/2UdUwrj
++ Coloque el nombre del archivo así **ASSR_TAA_Apellido_Nombre**, siendo A el número del trabajo, B el número del grupo, N el último apellido del integrante del grupo.
++ Una vez que haya desarrollado el trabajo, cada integrante del grupo contestará la encuesta de evaluación de los trabajos autónomos ingresando al enlace https://bit.ly/2UdUwrj
 
 **INTRODUCCIÓN**
 
@@ -41,25 +40,33 @@ En el presente trabajo realizará la instalación de los sistemas operativos bas
 3.	Inicie el software de virtualización escogido y cree una nueva máquina. Debe escoger de tipo Linux y en la versión debe corresponder a la distribución escogida en el anterior paso (Fedora, Debian, etc.).
 4.	Seleccione las características de procesamiento de tu computadora virtual. Dentro de esto deberá escoger el tamaño de memoria RAM destinada a la máquina virtual, así mismo, el tamaño del disco duro. Debe tomar en cuenta que los tamaños asignados a su máquina virtual, tanto disco duro como memoria RAM, serán restados a su computadora física. Recomendación 40GB de disco duro 4GB RAM.
 
-
 Figura 1. Creación de la máquina virtual en VirtualBox.
 
 <p align="center">
-  <img src="../imagenes/assr_ta_1.png" alt="industria" width="70%">
+  <img src="imagenes/assr_ta_1.png" alt="industria" width="70%">
 </p>
 
 
 Figura 2. Proceso de instalación de Raspbian.
 
 <p align="center">
-  <img src="../imagenes/assr_ta_2.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
+  <img src="imagenes/assr_ta_2.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
 </p>
 
 Figura 3. Inicialización de Raspbian.
 
 <p align="center">
-  <img src="../imagenes/assr_ta_3.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
+  <img src="imagenes/assr_ta_3.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
 </p>
 
+5. Describa las características técnicas de la distribución seleccionada.
+6. Describa el comando que permite eliminar la sesión de un usuario logoneado. Presentar pruebas de la ejecución del comando sugerido como imágenes.
+
+**Desafío:** Programe un menú de administración en la distribución usada en clase (CentOS) con lenguaje de Bash. Este menú consta de las siguientes opciones:
+- Usuarios creados por el administrador
+- Eliminar un proceso por ID
+- Broadcast a los usuarios
+- Reiniciar servidor
+- Apagar servidor
 
 

@@ -34,10 +34,10 @@
     * [4.4. Despliegue de una aplicación web](unidades/unidad4/unidad4_1.md)
 
 ## TRABAJOS AUTÓNOMOS
-* [Trabajo 1](trabajos/trabajo1/trabajo1.md)
-* [Trabajo 2](trabajos/trabajo2/trabajo2.md)
-* [Trabajo 3](trabajos/trabajo3/trabajo3.md)
-* [Trabajo 4](trabajos/trabajo4/trabajo4.md)
+* [Trabajo autónomo 1 Automatización de la administración de un servidor Linux](trabajos/trabajo1.md)
+* [Trabajo 2](trabajos/trabajo2.md)
+* [Trabajo 3](trabajos/trabajo3.md)
+* [Trabajo 4](trabajos/trabajo4.md)
 
 ## RECURSOS DE SOFTWARE
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)

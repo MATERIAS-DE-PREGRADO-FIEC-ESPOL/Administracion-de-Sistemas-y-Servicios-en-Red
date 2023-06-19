@@ -202,6 +202,3 @@ Los programadores están creando software que realiza una única función de un 
 Estos contenedores están organizados en "pods" que se ejecutan dentro de un "nodo" y pueden comunicarse entre sí y con el mundo exterior si es necesario.
 Linux es la tecnología subyacente que hace que la tecnología de contenedores funcione.
 Bare-Metal Deployment, es un sistema informático o una red en la que una máquina virtual se instala directamente en el hardware en lugar de dentro del sistema operativo (SO) del host.
-
-
-
