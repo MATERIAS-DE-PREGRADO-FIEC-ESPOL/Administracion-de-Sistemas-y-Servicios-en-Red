@@ -16,7 +16,7 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 - [Conceptos básicos](#conceptos)
 - [Protocolo FTP](#ftp)
 - [Protocolo DNS](#dns)
-- [Protocolo SMTP - POP - IMAP](#smtp)
+- [Protocolo SMTP - POP - IMAP](#correo)
 - [Protocolo HTTP](#proxy)
 
 
@@ -31,9 +31,10 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 - El proceso de iniciar o cerrar un servicio es manejado por scripts de servicio.
 
 
-<a name="conceptos"> </a>
+<a name="ftp"> </a>
 
 ## 💻  Protocolo FTP
+
 El software del servidor File Transfer Protocol (FTP) consiste en un daemon FTP y archivos de configuración. El daemon es un programa que comprueba continuamente las solicitudes de FTP de usuarios remotos. Cuando se recibe una solicitud, gestiona un inicio de sesión, establece la conexión a la cuenta de usuario solicitada y ejecuta los comandos FTP enviados por el usuario remoto. Utiliza el protocolo TCP, y el puerto 20, 21.
 
 Existen varios servidores FTP disponibles para su uso en sistemas  operativos Linux:
@@ -45,7 +46,6 @@ Existen varios servidores FTP disponibles para su uso en sistemas  operativos Li
 **Paso 1. Instalar el paquete vsftpd**
 
 ```
-
 [root@srv1-linux vsftpd]# yum -y install vsftpd  Dependencies Resolved
 =========================================================================
 Package	Arch	Version	Repository
@@ -64,7 +64,6 @@ Verifying: vsftpd-3.0.2-9.el7.x86_64     1/2
 
 Updated:
 vsftpd.x86_64 0:3.0.2-21.el7  Complete!
-
 ```
 
 **Paso 2. Configurar el archivo /etc/vsftpd/vsftpd.conf**
@@ -82,19 +81,20 @@ local_enable=YES  #
 # (Warning! chroot'ing can be very dangerous. If using chroot, make sure that  # the user does not have write access to the top level directory within the
 # chroot)
 #chroot_local_user=YES	#Descomentar está línea quitandole el símbolo numeral
+```
 
-````
 **Paso 3. Reiniciar el servicio**
-´
-````
+
+```
 [root@srv1-linux adita]#service vsftpd restart
-````
+```
 
-## 💻 **Protocolo DNS (Domain Name Service)**
 
-**DNS (Domain Name Service)**
+<a name="dns"> </a>
 
-Convierte nombres de máquinas a direcciones IP, es decir, mapea de una  nombre a una dirección y viceversa. Hay varios servicios que puede  utilizar para resolver direcciones IP. El más utilizado es Berkeley Internet  Name Domain service (BIND). Al configurar la biblioteca de resolución  para utilizar el servicio de nombres DNS para las búsquedas de host,  también tiene que indicar qué servidores de nombres utilizar. Hay un  archivo separado para esto llamado /etc/resolv.conf. Utiliza el  protocolo TCP/UDP con el puerto 53.
+## 💻 Protocolo DNS
+
+Domain Name Service (DNS )Convierte nombres de máquinas a direcciones IP, es decir, mapea de una  nombre a una dirección y viceversa. Hay varios servicios que puede  utilizar para resolver direcciones IP. El más utilizado es Berkeley Internet  Name Domain service (BIND). Al configurar la biblioteca de resolución  para utilizar el servicio de nombres DNS para las búsquedas de host,  también tiene que indicar qué servidores de nombres utilizar. Hay un  archivo separado para esto llamado /etc/resolv.conf. Utiliza el  protocolo TCP/UDP con el puerto 53.
 La configuración DNS más importante son las zonas de dominios que se  encuentran en el archivo /etc/named.conf. Entre los registros de  configuración de zonas se encuentran:
 A: Este registro asocia una dirección IP con un nombre de host.  MX: Un intercambiador de correo para un dominio.
 CNAME: Este registro asocia un alias con el nombre de host canónico de  un host.
@@ -106,11 +106,11 @@ PTR: Este tipo de registro se utiliza para asociar nombres en el dominio  in-add
 
 
 
-+ Paquete del servicio dns: bind, bind-chroot, bind-utils
+- Paquete del servicio dns: bind, bind-chroot, bind-utils
 
-+ Archivo de configuración de zona de dominio 
+- Archivo de configuración de zona de dominio 
 
-````
+```
 vbrew: /etc/named.conf
 zone "vbrew.com" {
 type master;  allow-transfer { 10.10.0.5;
@@ -121,9 +121,11 @@ file "/etc/bind/db.vbrew.com";
 };
 zone "0.168.192.in-addr.arpa" {  type master;
 file "/etc/bind/db.192.168.0";
-````
+```
 
-## 💻 **Protocolos SMTP/POP/IMAP**
+<a name="correo"> </a>
+
+## 💻  Protocolo SMTP - POP - IMAP
 
 <p align="center">
   <img src="../imagenes/assr_unid2_4.png" alt="distribuciones" width=80%">
@@ -144,8 +146,6 @@ type
 0	espol-edu-ec.mail.protection.outlook.com
 
 
-## 💻 **Protocolos SMTP/POP/IMAP**
-
 <p align="center">
   <img src="../imagenes/assr_unid2_6.png" alt="distribuciones" width=80%">
 </p>
@@ -159,9 +159,10 @@ type
 + Servicio de Anti-spam: SpamAssassin  http://spamassassin.apache.org/
 
 
-## 💻 **Protocolo de Navegación**
+<a name="http"> </a>
 
-**Proxy**
+## 💻 Protocolo HTTP
+
 Los protocolos soportados por squid son:
 
 Los servidores proxy operan como un  intermediario entre una red local y los  servicios disponibles en uno más grande  como Internet. Los servidores proxy  mantienen copias actuales de las páginas  web de acceso común. Squid es un servidor  gratuito, de código abierto y de caché  proxy para clientes web, diseñado para  acelerar el acceso a Internet y proporcionar  controles de seguridad para servidores web.  Utiliza el protocolo TCP, y el puerto 3128.
@@ -174,15 +175,13 @@ Los protocolos soportados por squid son:
 </p>
 
 
-## 💻 **Protocolo de Navegación**
-
 <p align="center">
   <img src="../imagenes/assr_unid2_8.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
 </p>
 
-+ Paquete: squid
+- Paquete: squid
 
-+ Paquete para generación de reporte del squid: SARG
+- Paquete para generación de reporte del squid: SARG
 
 
 <p align="center">
