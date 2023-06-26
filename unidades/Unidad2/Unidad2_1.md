@@ -10,9 +10,9 @@ remote_theme: pages-themes/cayman@v0.2.0
 
 Al finalizar la clase el estudiante será capaz de:
 
-Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
+- Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
 
-# 1.1. Distribuciones Linux
+# 2.1. Administración de Servicios en Red
 - [Conceptos básicos](#conceptos)
 - [Protocolo FTP](#ftp)
 - [Protocolo DNS](#dns)
@@ -22,7 +22,7 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 
 <a name="conceptos"> </a>
 
-## 💻 Administración de Servicios en Red
+## 💻 Conceptos básicos
 
 - Un único sistema Linux puede proporcionar varios tipos diferentes de servicios, que van desde seguridad a la  administración e incluyen servicios de Internet como: sitios web y sitios FTP, correo electrónico e impresión,  herramientas de seguridad como SSH y kerberos, herramientas de red administrativas como DHCP y LDAP.
 
@@ -193,5 +193,3 @@ Los protocolos soportados por squid son:
 <p align="center">
   <img src="../imagenes/assr_unid2_10.png" alt="distribuciones" width=90%">
 </p>
-
-Direcciones y archivos de configuración TCP/IP
