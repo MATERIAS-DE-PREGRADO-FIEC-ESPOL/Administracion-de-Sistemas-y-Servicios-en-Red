@@ -5,17 +5,20 @@ remote_theme: pages-themes/cayman@v0.2.0
 
 # Unidad 2: Internet y servicios en red
 
-1. Administración de servicios en red
+# 🎯 **Objetivo de Aprendizaje**
+
+Al finalizar la clase el estudiante será capaz de:
+
+Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
+
+# 1.1. Distribuciones Linux
+- [Administración de servicios en red](#servicios_red)
 2. Enrutamiento en Linux
 3. Linux en Sistemas embebidos
 4. Servicios para análisis de datos
 
 
-## 🎯 **Objetivo de Aprendizaje**
 
-Al finalizar la clase el estudiante será capaz de:
-
-Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
 
 ## 🕸️ **Conceptos Básicos de Servicios de Red**
 
