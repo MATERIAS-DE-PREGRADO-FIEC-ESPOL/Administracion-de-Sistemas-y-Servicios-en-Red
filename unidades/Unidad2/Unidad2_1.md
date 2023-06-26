@@ -1,8 +1,8 @@
 ---
 remote_theme: pages-themes/cayman@v0.2.0
 ---
-
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
+
 
 # Unidad 2: Internet y servicios en red
 
@@ -21,6 +21,7 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 
 
 <a name="conceptos"> </a>
+
 ## 💻 Administración de Servicios en Red
 
 - Un único sistema Linux puede proporcionar varios tipos diferentes de servicios, que van desde seguridad a la  administración e incluyen servicios de Internet como: sitios web y sitios FTP, correo electrónico e impresión,  herramientas de seguridad como SSH y kerberos, herramientas de red administrativas como DHCP y LDAP.
@@ -195,5 +196,3 @@ Los protocolos soportados por squid son:
 </p>
 
 Direcciones y archivos de configuración TCP/IP
-
-
