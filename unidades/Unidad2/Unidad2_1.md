@@ -18,8 +18,6 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 4. Servicios para análisis de datos
 
 
-
-
 ## 🕸️ **Conceptos Básicos de Servicios de Red**
 
 - Un único sistema Linux puede proporcionar varios tipos diferentes de servicios, que van desde seguridad a la  administración e incluyen servicios de Internet como: sitios web y sitios FTP, correo electrónico e impresión,  herramientas de seguridad como SSH y kerberos, herramientas de red administrativas como DHCP y LDAP.
