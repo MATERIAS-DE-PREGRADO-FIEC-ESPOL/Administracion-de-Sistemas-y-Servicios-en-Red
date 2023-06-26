@@ -66,20 +66,20 @@ Previo a la instalación de una distribución de Linux para un servidor es neces
 - En el primer sector del disco está el registro de arranque maestro “MBR” junto a la tabla de particiones.
 
 <p align="center">
-  <img src="../imagenes/particion.png" alt="industria" width="100%">
+  <img src="imagenes/particion.png" alt="industria" width="100%">
 </p>
 
 En Linux los manejadores, que se encuentran en el directorio /dev, se usan para comunicarse con los dispositivos de su sistema como discos duros. Los discos duros SSD se nombran con /dev/disksn.
 
 <p align="center">
-  <img src="../imagenes/df.png" alt="industria" width="100%">
+  <img src="imagenes/df.png" alt="industria" width="100%">
 </p>
 
 Por lo general se crean dos particiones para Linux, una para ser usada como sistema de ficheros raíz y la otra como espacio de intercambio “swap”.
 La partición swap, es un espacio de intercambio de ayuda a la memoria RAM a pasar datos temporalmente al disco duro.
 
 <p align="center">
-  <img src="../imagenes/particiones_servidor.png" alt="industria" width="100%">
+  <img src="imagenes/particiones_servidor.png" alt="industria" width="100%">
 </p>
 
 <a name="herramientas_virtualizacion"> </a>
@@ -88,7 +88,7 @@ La partición swap, es un espacio de intercambio de ayuda a la memoria RAM a pas
 - [Vmware](https://www.vmware.com)
 - [Microsoft Azure](https://azure.microsoft.com/)
 <p align="center">
-  <img src="../imagenes/virtualization_tools.png" alt="industria" width="70%">
+  <img src="imagenes/virtualization_tools.png" alt="industria" width="70%">
 </p>
 
 <a name="referencias"> </a>
@@ -104,7 +104,7 @@ Cuando se ejecuta una aplicación de terminal y aparece un shell, que muestra un
 Normalmente, el mensaje contiene información sobre el usuario y el sistema. A continuación se muestra una estructura de aviso común:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_shell.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_shell.png" alt="industria" width="70%">
 </p>
 
 El prompt que se muestra, contiene la siguiente información:
@@ -125,7 +125,7 @@ Current Directory ```~```
 - Si usted escribe ```ls``` y presiona **Enter**. El resultado debería parecerse al siguiente ejemplo:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls.png" alt="industria" width="70%">
 </p>
 
 - Algunos comandos requieren una entrada adicional para ejecutarse correctamente.
@@ -148,7 +148,7 @@ Current Directory ```~```
 - Por ejemplo, usando la opción ```-l``` del comando ```ls``` da como resultado una lista extensa, que proporciona información adicional sobre los archivos que se enumeran.
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_l.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_l.png" alt="industria" width="70%">
 </p>
 
 
@@ -156,7 +156,7 @@ Current Directory ```~```
 
 - Las opciones se pueden usar junto con otras opciones:  
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_lr.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_lr.png" alt="industria" width="70%">
 </p>
  
 - Las opciones suelen ser letras simples; sin embargo, a veces también son palabras o frases.
@@ -175,13 +175,13 @@ Current Directory ```~```
 - Si el comando ```ls``` recibe el nombre de un directorio como argumento, enumera el contenido de ese directorio:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_unargumento.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_unargumento.png" alt="industria" width="70%">
 </p>
 
 - Algunos comandos (como ```ls```) aceptan múltiples argumentos:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_dosargumentos.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_dosargumentos.png" alt="industria" width="70%">
 </p>
 
 <a name="historial"> </a>
@@ -193,7 +193,7 @@ Current Directory ```~```
 - Para ver la lista de historial completa de una terminal, use el comando ```history```.
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_historial.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_historial.png" alt="industria" width="70%">
 </p>
 
 - Si el comando deseado está en la lista que genera el comando ```history```, se puede ejecutar escribiendo un signo de exclamación ! y luego el número al lado del comando (es decir,! 3) (i.e., ```!3```)
@@ -201,7 +201,7 @@ Current Directory ```~```
 - Si el comando de historial pasa un número como argumento, genera ese número de comandos anteriores de la lista de historial, como se muestra:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_historial_3.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_historial_3.png" alt="industria" width="70%">
 </p>
 
 - Para ejecutar el tipo de comando más reciente ```!!``` y presiona Enter: 
@@ -219,7 +219,7 @@ man command
 - Por ejemplo, a continuación se muestra la página del comando man ls:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_man.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_man.png" alt="industria" width="70%">
 </p>
 
 ***Importante: El comando man usa un localizador para mostrar documentos. Por lo general, este localizador es el comando less, pero en algunas distribuciones, puede ser el comando more. Ambos son muy similares en su desempeño.***
@@ -237,7 +237,7 @@ Para buscar la ubicación de un comando o las páginas del comando man, use el c
 Este comando busca comandos, archivos de origen y páginas de manual en ubicaciones específicas donde estos archivos se almacenan normalmente:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_whereis.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_whereis.png" alt="industria" width="70%">
 </p>
 
 Las páginas de manual se distinguen fácilmente de los comandos, ya que generalmente se comprimen con un programa llamado ```gzip```, lo que da como resultado un nombre de archivo que termina en .gz.
@@ -255,13 +255,13 @@ Es posible actualizar la base de datos de ```locate``` manualmente ejecutando el
 La opción -c del comando ```locate``` mostrará cuántos archivos coinciden:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_locate.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_locate.png" alt="industria" width="70%">
 </p>
 
   - La opción -b solo incluye listados que tienen el término de búsqueda en el nombre base del nombre del archivo. Para limitar aún más la salida, coloque un caracter \ delante del término de búsqueda:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_locate_especifico.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_locate_especifico.png" alt="industria" width="70%">
 </p>
 
 
@@ -277,7 +277,7 @@ La opción -c del comando ```locate``` mostrará cuántos archivos coinciden:
 - Esta documentación se divide en nodos. En el ejemplo a continuación, la línea resaltada muestra que está actualmente en el nodo de invocación ls
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_info_dd.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_info_dd.png" alt="industria" width="70%">
 </p>
 
 - Puede navegar por el documento con las teclas de flecha. 
@@ -289,7 +289,7 @@ La opción -c del comando ```locate``` mostrará cuántos archivos coinciden:
 Muchos comandos proporcionarán información básica, muy similar a la SINOPSIS que se encuentra en las páginas de manual, simplemente usando la opción --help para el comando.
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_help.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_help.png" alt="industria" width="70%">
 </p>
 
 
@@ -301,13 +301,13 @@ Muchos comandos proporcionarán información básica, muy similar a la SINOPSIS 
 - La estructura de directorios de Linux, llamada sistema de archivos, también tiene un nivel superior llamado directorio raíz (simbolizado por la character slash **/**).
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
 </p>
 
 - Para ver el contenido del directorio root, use el comando ```ls``` con el caracter ```/``` como argumento:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_ls_usr.png" alt="industria" width="70%">
 </p>
 
 Observe que hay muchos directorios con nombres descriptivos que incluyen ```/boot```, que contiene archivos para iniciar la computadora.
@@ -331,7 +331,7 @@ Observe que hay muchos directorios con nombres descriptivos que incluyen ```/boo
 - Entonces, un usuario llamado ```acollaguazo``` tendría un directorio de inicio llamado ```/home/acollaguazo```:
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_home_acollaguazo.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_home_acollaguazo.png" alt="industria" width="70%">
 </p>
 
 
@@ -347,7 +347,7 @@ El comando ```pwd``` (directorio de trabajo de impresión) se puede utilizar par
 El comando ```pwd``` imprime el directorio de trabajo, que es la ubicación actual del usuario dentro del sistema de archivos.
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_pwd.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidad1_3_pwd.png" alt="industria" width="70%">
 </p>
 
 
@@ -404,7 +404,7 @@ bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
 ```
 
 <p align="center">
-  <img src="../imagenes/assr_unidad1_3_rutas.png" alt="industria" width="100%">
+  <img src="imagenes/assr_unidad1_3_rutas.png" alt="industria" width="100%">
 </p>
 
 

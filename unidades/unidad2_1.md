@@ -40,7 +40,7 @@ El software del servidor File Transfer Protocol (FTP) consiste en un daemon FTP 
 Existen varios servidores FTP disponibles para su uso en sistemas  operativos Linux:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_2.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_2.png" alt="distribuciones" width=100%">
 </p>
 
 **Paso 1. Instalar el paquete vsftpd**
@@ -101,7 +101,7 @@ CNAME: Este registro asocia un alias con el nombre de host canónico de  un host
 PTR: Este tipo de registro se utiliza para asociar nombres en el dominio  in-addr.arpa con nombres de host.
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_3.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_3.png" alt="distribuciones" width=100%">
 </p>
 
 
@@ -128,10 +128,10 @@ file "/etc/bind/db.192.168.0";
 ## 💻  Protocolo SMTP - POP - IMAP
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_4.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_4.png" alt="distribuciones" width=80%">
 </p>
 <p align="center">
-  <img src="../imagenes/assr_unid2_5.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_5.png" alt="distribuciones" width=80%">
 </p>
 
 **Correo**.-
@@ -147,7 +147,7 @@ type
 
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_6.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_6.png" alt="distribuciones" width=80%">
 </p>
 
 + Servicio de correo saliente: sendmail
@@ -171,12 +171,12 @@ Los protocolos soportados por squid son:
 
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_7.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_7.png" alt="distribuciones" width=80%">
 </p>
 
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_8.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
+  <img src="imagenes/assr_unid2_8.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
 </p>
 
 - Paquete: squid
@@ -185,11 +185,11 @@ Los protocolos soportados por squid son:
 
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_9.png" alt="distribuciones" width=90%">
+  <img src="imagenes/assr_unid2_9.png" alt="distribuciones" width=90%">
 </p>
 
 ## 💻 **Protocolos de Servicios en Red**
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_10.png" alt="distribuciones" width=90%">
+  <img src="imagenes/assr_unid2_10.png" alt="distribuciones" width=90%">
 </p>

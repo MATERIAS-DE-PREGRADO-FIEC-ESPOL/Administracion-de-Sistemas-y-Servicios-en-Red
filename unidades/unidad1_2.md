@@ -19,10 +19,9 @@ Al finalizar la clase el estudiante será capaz de:
 - [Lenguajes de desarrollo](#lenguajes)
 - [Referencias](#referencias)
 
-<a name="aplicaciones"> </a>
-## 💻 Categorías de aplicaciones
 
 <a name="aplicaciones"> </a>
+
 ## 💻 Categorías de aplicaciones
 - El kernel decide qué programa obtiene qué bloques de memoria, inicia y elimina las aplicaciones, y maneja la visualización de texto o gráficos en un monitor.
 - Las aplicaciones realizan solicitudes al núcleo y, a cambio, reciben recursos, como memoria, CPU y espacio en disco.
@@ -37,21 +36,24 @@ El software de Linux generalmente cae en una de tres categorías:
 2. *Aplicaciones de escritorio*: Navegadores web, editores de texto, reproductores de música u otras aplicaciones con las que los usuarios interactúan directamente.
 3. *Herramientas*: Una categoría suelta de software que existe para facilitar la administración de los sistemas informáticos.
 
+
 <a name="servidor"> </a>
+
 ### </> **Aplicaciones de servidor**
+
 - Linux sobresale en la ejecución de aplicaciones de servidor debido a su confiabilidad y eficiencia.
 - Uno de los primeros usos de Linux fue para *servidores web*.
     - Un servidor web aloja contenido para páginas web, que son vistas por un navegador web utilizando el Protocolo de transferencia de hipertexto (HTTP) o cifrado con HTTPS.
 - Existe una creciente demanda de software de servidor de nube privada que se pueda implementar y administrar internamente.
 
 <p align="center">
-  <img src="../imagenes/owncloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="owncloud">
+  <img src="imagenes/owncloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="owncloud">
 </p>
 El proyecto ownCloud proporciona software para almacenar, sincronizar y compartir datos de servidores privados en la nube.  
 
 <br><br>
 <p align="center">
-  <img src="../imagenes/nextcloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="nextcloud">
+  <img src="imagenes/nextcloud.png" style="width: 15%; height: 60px; float: left; padding: 5px;" alt="nextcloud">
 </p>
 El proyecto Nextcloud también proporciona software de nube privada.
 
@@ -68,7 +70,7 @@ El proyecto Nextcloud también proporciona software de nube privada.
 
 - ***Productividad:***
 <p align="center">
-  <img src="../gifs/libreoffice.gif" style="width: 20%; height: 100px; float: left; padding: 5px;" alt="libreoffice">
+  <img src="gifs/libreoffice.gif" style="width: 20%; height: 100px; float: left; padding: 5px;" alt="libreoffice">
 </p>
 
 LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces llamada OpenOffice.org).
@@ -77,14 +79,16 @@ LibreOffice es una bifurcación de la suite de aplicaciones OpenOffice (a veces 
 <br><br>
 - ***Navegadores web:***
 <p align="center">
-  <img src="../imagenes/firefoxgoogle.png" style="width: 20%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
+  <img src="imagenes/firefoxgoogle.png" style="width: 20%; height: 80px; float: left; padding: 10px;" alt="firefoxgoogle">
 </p>
 
 Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código abierto que son rápidos, ricos en funciones y tienen un excelente soporte para desarrolladores web.
 
 
 <a name="herramientas_consola"> </a>
+
 ## 💻 Herramientas de consola
+
 - UNIX tiene una superposición considerable entre las habilidades de desarrollo de software y administración de sistemas.
 - Las herramientas para administrar sistemas tienen características de lenguajes de computadora, como bucles, y se usan ampliamente en la automatización de tareas de administración de sistemas.
 - Por lo tanto, se requiere familiaridad básica con la programación para administradores de sistemas competentes.
@@ -99,7 +103,9 @@ Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código a
 
 
 <a name="paquetes"> </a>
+
 ## 💻 Gestión de paquetes
+
 - Todos los sistemas Linux necesitan agregar, eliminar y actualizar software.
 - Las distribuciones modernas usan paquetes.
 - Los paquetes son archivos comprimidos que agrupan una aplicación y sus dependencias (o archivos requeridos), lo que simplifica enormemente la instalación.
@@ -119,7 +125,9 @@ Los navegadores Mozilla Firefox y Google Chrome son navegadores web de código a
 
 
 <a name="lenguajes"> </a>
+
 ## 💻 Lenguajes de desarrollo
+
 - Los lenguajes de programación de computadoras proporcionan una manera para que un programador ingrese instrucciones en un formato más legible para los humanos, y éstas instrucciones eventualmente se traduzcan en algo que la computadora entienda.
 - Los lenguajes se dividen en dos: interpretados o compilados.
     - Un lenguaje interpretado traduce el código escrito en código de computadora a medida que se ejecuta el programa.

@@ -27,7 +27,7 @@ Al finalizar la clase el estudiante será capaz de:
 <a name="definicion"> </a>
 ## 💻 ¿Qué es Linux?
 <p align="center">
-  <img src="../imagenes/terminal-linux.png" style="width: 30%; height: 180px; float: left; padding: 15px;" alt="linux">
+  <img src="imagenes/terminal-linux.png" style="width: 30%; height: 180px; float: left; padding: 15px;" alt="linux">
 </p>
 
 
@@ -50,7 +50,7 @@ Las características que componen Linux incluyen lo siguiente:
 <a name="industria"> </a>
 ### 🕸️ **Linux en la industria**
 <p align="center">
-  <img src="../imagenes/industria-linux.png" alt="industria" width="70%">
+  <img src="imagenes/industria-linux.png" alt="industria" width="70%">
 </p>
 
 Los trabajos de Linux están en todas partes, las habilidades de Linux están en demanda en casi todas las industrias y categorías de trabajo en el planeta.
@@ -90,7 +90,7 @@ La CLI se basa principalmente en la entrada del teclado.
 <a name="distribuciones"> </a>
 ### 🕸️ **Linux tiene distribuciones**
 <p align="center">
-  <img src="../imagenes/distribuciones.png" alt="distribuciones" width="80%">
+  <img src="imagenes/distribuciones.png" alt="distribuciones" width="80%">
 </p>
 Una distribución se refiere al kernel de Linux, las herramientas y el conjunto de aplicaciones que se agrupan.
 
@@ -115,7 +115,7 @@ Las distribuciones modernas cuentan con:
 <a name="redhat"> </a>
 ### 🕸️ **Red Hat**
 <p align="center">
-  <img src="../imagenes/redhat.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
+  <img src="imagenes/redhat.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
 </p>
 
 - Se enfoca en aplicaciones de servidor como web y servicio de archivos.
@@ -129,7 +129,7 @@ Las distribuciones modernas cuentan con:
 <a name="suse"> </a>
 ### 🕸️ **SUSE**
 <p align="center">
-  <img src="../imagenes/suse.png" style="width: 20%; height: 80px; float: right; padding: 15px;" alt="debian">
+  <img src="imagenes/suse.png" style="width: 20%; height: 80px; float: right; padding: 15px;" alt="debian">
 </p>
 
 - [SUSE](https://www.suse.com/) Una de las primeras distribuciones.
@@ -143,7 +143,7 @@ Las distribuciones modernas cuentan con:
 <a name="debian"> </a>
 ### 🕸️ **Debian**
 <p align="center">
-  <img src="../imagenes/debian.png" style="width: 15%; height: 70px; float: right; padding: 15px;" alt="debian">
+  <img src="imagenes/debian.png" style="width: 15%; height: 70px; float: right; padding: 15px;" alt="debian">
 </p>
 
 - Esfuerzo comunitario que promueve el uso de software de código abierto.
@@ -154,7 +154,7 @@ Las distribuciones modernas cuentan con:
 <a name="android"> </a>
 ### 🕸️ **Android**
 <p align="center">
-  <img src="../imagenes/android.png" style="width: 20%; height: 80px; float: right; padding: 15px;" alt="android">
+  <img src="imagenes/android.png" style="width: 20%; height: 80px; float: right; padding: 15px;" alt="android">
 </p>
 
 - Proporciona una plataforma para usuarios móviles.
@@ -166,7 +166,7 @@ Las distribuciones modernas cuentan con:
 <a name="otras"> </a>
 ### 🕸️ **Otras distribuciones de Linux**
 <p align="center">
-  <img src="../imagenes/raspberryPi.jpg" style="width: 30%; height: 100px; float: right; padding: 15px;" alt="debian">
+  <img src="imagenes/raspberryPi.jpg" style="width: 30%; height: 100px; float: right; padding: 15px;" alt="debian">
 </p>
 
 - [Raspberry Pi](https://www.raspberrypi.org/) es una distribución de Linux diseñada para ejecutarse en hardware "Raspberry Pi”.
