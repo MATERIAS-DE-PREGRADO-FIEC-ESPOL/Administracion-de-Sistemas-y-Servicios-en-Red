@@ -1,6 +1,7 @@
 ---
 remote_theme: pages-themes/cayman@v0.2.0
 ---
+
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
 # Unidad 2: Internet y servicios en red
@@ -12,13 +13,15 @@ Al finalizar la clase el estudiante será capaz de:
 Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
 
 # 1.1. Distribuciones Linux
-- [Administración de servicios en red](#servicios_red)
-2. Enrutamiento en Linux
-3. Linux en Sistemas embebidos
-4. Servicios para análisis de datos
+- [Conceptos básicos](#conceptos)
+- [Protocolo FTP](#ftp)
+- [Protocolo DNS](#dns)
+- [Protocolo SMTP - POP - IMAP](#smtp)
+- [Protocolo HTTP](#proxy)
 
 
-## 🕸️ **Conceptos Básicos de Servicios de Red**
+<a name="conceptos"> </a>
+## 💻 Administración de Servicios en Red
 
 - Un único sistema Linux puede proporcionar varios tipos diferentes de servicios, que van desde seguridad a la  administración e incluyen servicios de Internet como: sitios web y sitios FTP, correo electrónico e impresión,  herramientas de seguridad como SSH y kerberos, herramientas de red administrativas como DHCP y LDAP.
 
@@ -26,14 +29,11 @@ Experimentar la gestión de servicios en red incluyendo servicios de Internet m�
 
 - El proceso de iniciar o cerrar un servicio es manejado por scripts de servicio.
 
-## 🕸️ **Conceptos de Servicios de Red**
-### Servicios iniciales: **STANDALONE Y XINETD**
 
+<a name="conceptos"> </a>
 
-## Protocolo FTP (File Transfer Protocol)
-
-**FTP (File Transfer Protocol)**
-El software del servidor FTP consiste en un daemon FTP y archivos de configuración. El daemon es un programa que comprueba continuamente las solicitudes de FTP de usuarios remotos. Cuando se recibe una solicitud, gestiona un inicio de sesión, establece la conexión a la cuenta de usuario solicitada y ejecuta los comandos FTP enviados por el usuario remoto. Utiliza el protocolo TCP, y el puerto 20, 21.
+## 💻  Protocolo FTP
+El software del servidor File Transfer Protocol (FTP) consiste en un daemon FTP y archivos de configuración. El daemon es un programa que comprueba continuamente las solicitudes de FTP de usuarios remotos. Cuando se recibe una solicitud, gestiona un inicio de sesión, establece la conexión a la cuenta de usuario solicitada y ejecuta los comandos FTP enviados por el usuario remoto. Utiliza el protocolo TCP, y el puerto 20, 21.
 
 Existen varios servidores FTP disponibles para su uso en sistemas  operativos Linux:
 
