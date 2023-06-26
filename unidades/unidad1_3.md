@@ -36,9 +36,9 @@ Al finalizar la clase el estudiante será capaz de:
 - [Eliminar directorios](#Eliminar)
 - [Copiar archivos](#copiar)
 - [Mover archivos](#mover)
-- [Comprimir archivos](#comprimir)
-- [Almacenar archivos](#almacenar)
-- [Archivos ZIP](#zip)
+- [Webmin](#webmin)
+- [Administración de usuarios](#usuarios)
+- [Grupo de Usuarios](#grupo_usuarios)
 - [Referencias](#referencias)
 
 <a name="recursos"> </a>
@@ -458,11 +458,13 @@ Para el comando cd, este acceso directo no es muy útil, pero es útil para los 
 
 
 <a name="crear"> </a>
+
 ## 💻 Crear directorios
 
 Para crear un directorio, use el comando mkdir:
 
 <a name="eliminar"> </a>
+
 ## 💻 Eliminar directorios
 
 El comando rm se puede usar para eliminar directorios. Sin embargo, el uso predeterminado (sin opciones) del comando rm no podrá eliminar un directorio:
@@ -472,6 +474,7 @@ Para eliminar un directorio, use la opción -r (recursiva) para el comando rm:
 Importante: cuando un usuario elimina un directorio, todos los archivos y subdirectorios se eliminan sin ninguna pregunta interactiva. Es mejor usar la opción   -i con el comando rm.
 
 <a name="copiar"> </a>
+
 ## 💻 Copiar archivos
 
 El comando cp se usa para copiar archivos. Requiere una fuente y un destino.
@@ -485,6 +488,7 @@ El siguiente comando copiará el archivo /etc/hosts a su directorio de inicio:
 
 
 <a name="mover"> </a>
+
 ## 💻 Mover archivos
 
 Para mover un archivo, use el comando mv.
@@ -509,11 +513,16 @@ id:5:initdefault:
 
 Sysbench: Permite obtener rápidamente una impresión del rendimiento del sistema.
 
-## Webmin
+<a name="webmin"> </a>
+
+## 💻 Webmin
 
 Webmin es un programa que simplifica el proceso de gestión de un sistema Linux o Unix. Webmin permite editar manualmente los archivos de configuración y ejecutar comandos para crear cuentas, configurar un servidor web y administrar el reenvío de correo electrónico a través de una interfaz web fácil de usar y actualiza automáticamente todos los archivos de configuración necesarios.
 
-## Administración de usuarios
+
+<a name="usuarios"> </a>
+
+## 💻 Administración de usuarios
 
 El usuario root puede leer, modificar o borrar cualquier archivo en el sistema. Este usuario es utilizado para ejecutar tareas específicas que no pueden ser ejecutadas usando un usuario normal.
 El archivo /etc/passwd contiene las cuentas de usuarios, cada línea de este archivo denota un usuario, el formato de cada línea es:
@@ -523,7 +532,10 @@ El archivo /etc/passwd contiene las cuentas de usuarios, cada línea de este arc
 
 **/etc/shadow**
 
-## Grupos de Usuarios
+
+<a name="grupo_usuarios"> </a>
+
+## 💻 Grupo de usuarios
 
 La entidad grupo permite asignar permisos a los archivos de manera más eficiente, ya que podremos agrupar usuarios que compartan similares carácterísticas con respecto al acceso a ciertos directorios y/o archivos.
 La definición de grupos de usuarios se encuentra en el archivo /etc/group, como en el archivo /etc/passwd. El formato del archivo /etc/group se define así:
