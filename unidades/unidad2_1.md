@@ -46,30 +46,44 @@ Existen varios servidores FTP disponibles para su uso en sistemas  operativos Li
 **Paso 1. Instalar el paquete vsftpd**
 
 ```
-[root@srv1-linux vsftpd]# yum -y install vsftpd  Dependencies Resolved
-=========================================================================
-Package	Arch	Version	Repository
-=========================================================================
-Updating:
-vsftpd	x86_64	3.0.2-21.el7	base
+[root@localhost ~]# yum -y install vsftpd
+Dependencias resueltas.
+===========================================================================================
+ Paquete           Arquitectura       Versión                   Repositorio           Tam.
+===========================================================================================
+Instalando:
+ vsftpd            aarch64            3.0.5-5.el9               appstream            164 k
 
-Transaction Summary
-=========================================================================
-Running transaction
+Resumen de la transacción
+===========================================================================================
+Instalar  1 Paquete
 
-Updating:  vsftpd-3.0.2-21.el7.x86_64    1/2
-Cleanup:  : vsftpd-3.0.2-9.el7.x86_64    1/2
-Verifying:  vsftpd-3.0.2-21.el7.x86_64   1/2
-Verifying: vsftpd-3.0.2-9.el7.x86_64     1/2
+Tamaño total de la descarga: 164 k
+Tamaño instalado: 371 k
+Descargando paquetes:
+vsftpd-3.0.5-5.el9.aarch64.rpm                             105 kB/s | 164 kB     00:01    
+-------------------------------------------------------------------------------------------
+Total                                                       67 kB/s | 164 kB     00:02     
+Ejecutando verificación de operación
+Verificación de operación exitosa.
+Ejecutando prueba de operaciones
+Prueba de operación exitosa.
+Ejecutando operación
+  Preparando          :                                                                1/1 
+  Instalando          : vsftpd-3.0.5-5.el9.aarch64                                     1/1 
+  Ejecutando scriptlet: vsftpd-3.0.5-5.el9.aarch64                                     1/1 
+  Verificando         : vsftpd-3.0.5-5.el9.aarch64                                     1/1 
+Productos instalados actualizados.
 
-Updated:
-vsftpd.x86_64 0:3.0.2-21.el7  Complete!
+Instalado:
+  vsftpd-3.0.5-5.el9.aarch64                                                               
+¡Listo!
 ```
 
 **Paso 2. Configurar el archivo /etc/vsftpd/vsftpd.conf**
 
 ```
-[root@srv1-linux adita]# vi /etc/vsftpd/vsftpd.conf
+[root@localhost ~]# vi /etc/vsftpd/vsftpd.conf
 # Allow anonymous FTP? (Beware - allowed by default if you comment this out).  anonymous_enable=YES	#Cambiar por anonymous_enable=NO
 #
 # Uncomment this to allow local users to log in.
@@ -80,7 +94,7 @@ local_enable=YES  #
 # You may specify an explicit list of local users to chroot() to their home  # directory. If chroot_local_user is YES, then this list becomes a list of  # users to NOT chroot().
 # (Warning! chroot'ing can be very dangerous. If using chroot, make sure that  # the user does not have write access to the top level directory within the
 # chroot)
-#chroot_local_user=YES	#Descomentar está línea quitandole el símbolo numeral
+# chroot_local_user=YES   #Descomentar está línea quitandole el símbolo numeral
 ```
 
 **Paso 3. Reiniciar el servicio**
