@@ -35,13 +35,13 @@ Al finalizar la clase el estudiante será capaz de:
 
 ## 💻  Protocolo FTP
 
+<p align="center">
+  <img src="imagenes/assr_unidad2_1_ftp.png" alt="ftp" width=100%">
+</p>
+
 El software del servidor File Transfer Protocol (FTP) consiste en un daemon FTP y archivos de configuración. El daemon es un programa que comprueba continuamente las solicitudes de FTP de usuarios remotos. Cuando se recibe una solicitud, gestiona un inicio de sesión, establece la conexión a la cuenta de usuario solicitada y ejecuta los comandos FTP enviados por el usuario remoto. Utiliza el protocolo TCP, y el puerto 20, 21.
 
 Existen varios servidores FTP disponibles para su uso en sistemas  operativos Linux:
-
-<p align="center">
-  <img src="imagenes/assr_unidad2_1_ftp.png" alt="distribuciones" width=100%">
-</p>
 
 
 **Paso 1. Instalar el paquete vsftpd**
@@ -116,7 +116,7 @@ CNAME: Este registro asocia un alias con el nombre de host canónico de  un host
 PTR: Este tipo de registro se utiliza para asociar nombres en el dominio  in-addr.arpa con nombres de host.
 
 <p align="center">
-  <img src="imagenes/assr_unid2_3.png" alt="industria" width="70%">
+  <img src="imagenes/assr_unidas2_3_dns.png" alt="industria" width="70%">
 </p>
 
 - Paquete del servicio dns: bind, bind-chroot, bind-utils
@@ -140,11 +140,11 @@ file "/etc/bind/db.192.168.0";
 
 ## 💻  Protocolo SMTP - POP - IMAP
 
-**Correo:** El servidor de correo proporcionan a los usuarios servicios de correo electrónico. Ellos  tienen sus propios protocolos TCP/IP tales como el Simple Mail Transfer Protocol (SMTP),  Post Office Protocol (POP), Internet Mail Access Protocol (IMAP). Muchas distribuciones  de Linux instalarán y configurarán automáticamente sendmail o postfix. También puede  configurar su sistema Linux para ejecutar un servidor POP. Dichos servidores de correo  están asociados con diferentes hosts mediante registros de intercambio de correo,  conocidos como registros MX, en la configuración DNS de una red. Utiliza el protocolo  SMTP para el correo saliente con el puerto 25 y el protocolo POP para el correo  entrante con el puerto 110.
-
 <p align="center">
   <img src="imagenes/assr_unid2_4.png" alt="servers" width=80%">
 </p>
+
+**Correo:** El servidor de correo proporcionan a los usuarios servicios de correo electrónico. Ellos  tienen sus propios protocolos TCP/IP tales como el Simple Mail Transfer Protocol (SMTP),  Post Office Protocol (POP), Internet Mail Access Protocol (IMAP). Muchas distribuciones  de Linux instalarán y configurarán automáticamente sendmail o postfix. También puede  configurar su sistema Linux para ejecutar un servidor POP. Dichos servidores de correo  están asociados con diferentes hosts mediante registros de intercambio de correo,  conocidos como registros MX, en la configuración DNS de una red. Utiliza el protocolo  SMTP para el correo saliente con el puerto 25 y el protocolo POP para el correo  entrante con el puerto 110.
 
 <p align="center">
   <img src="imagenes/assr_unid2_5.png" alt="agent" width=80%">
