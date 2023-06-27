@@ -139,17 +139,15 @@ file "/etc/bind/db.192.168.0";
 
 ## 💻  Protocolo SMTP - POP - IMAP
 
+**Correo:** El servidor de correo proporcionan a los usuarios servicios de correo electrónico. Ellos  tienen sus propios protocolos TCP/IP tales como el Simple Mail Transfer Protocol (SMTP),  Post Office Protocol (POP), Internet Mail Access Protocol (IMAP). Muchas distribuciones  de Linux instalarán y configurarán automáticamente sendmail o postfix. También puede  configurar su sistema Linux para ejecutar un servidor POP. Dichos servidores de correo  están asociados con diferentes hosts mediante registros de intercambio de correo,  conocidos como registros MX, en la configuración DNS de una red. Utiliza el protocolo  SMTP para el correo saliente con el puerto 25 y el protocolo POP para el correo  entrante con el puerto 110.
+
 <p align="center">
-  <img src="imagenes/assr_unid2_4.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_4.png" alt="servers" width=80%">
 </p>
 
 <p align="center">
-  <img src="imagenes/assr_unid2_5.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_5.png" alt="agent" width=80%">
 </p>
-
-**Correo**.-
-El servidor de correo proporcionan a los usuarios servicios de correo electrónico. Ellos  tienen sus propios protocolos TCP/IP tales como el Simple Mail Transfer Protocol (SMTP),  Post Office Protocol (POP), Internet Mail Access Protocol (IMAP). Muchas distribuciones  de Linux instalarán y configurarán automáticamente sendmail o postfix. También puede  configurar su sistema Linux para ejecutar un servidor POP. Dichos servidores de correo  están asociados con diferentes hosts mediante registros de intercambio de correo,  conocidos como registros MX, en la configuración DNS de una red. Utiliza el protocolo  SMTP para el correo saliente con el puerto 25 y el protocolo POP para el correo  entrante con el puerto 110.
-
 
 **Por ejemplo:**
 name  espol.edu.ec
@@ -163,13 +161,13 @@ type
   <img src="imagenes/assr_unid2_6.png" alt="distribuciones" width=80%">
 </p>
 
-+ Servicio de correo saliente: sendmail
+- Servicio de correo saliente: sendmail
 
-+ Servicio de correo entrante: dovecot
+- Servicio de correo entrante: dovecot
 
-+ Servicio de administración vía web para el cliente de correo: SquirrelMail  https://squirrelmail.org/
+- Servicio de administración vía web para el cliente de correo: SquirrelMail  https://squirrelmail.org/
 
-+ Servicio de Anti-spam: SpamAssassin  http://spamassassin.apache.org/
+- Servicio de Anti-spam: SpamAssassin  http://spamassassin.apache.org/
 
 
 <a name="proxy"> </a>
