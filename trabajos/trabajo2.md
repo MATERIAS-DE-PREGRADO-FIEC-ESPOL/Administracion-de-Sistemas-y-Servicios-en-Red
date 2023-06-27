@@ -348,5 +348,5 @@ target     prot opt source               destination
 ### Paso 14. Verificar el estado activo del servicio de iptables.
 
 <p align="center">
-  <img src="imagenes/assr_ta2_squid_restart.png" alt="virtualmachine" width="80%">
+  <img src="imagenes/assr_ta2_squid_status.png" alt="status" width="80%">
 </p>
