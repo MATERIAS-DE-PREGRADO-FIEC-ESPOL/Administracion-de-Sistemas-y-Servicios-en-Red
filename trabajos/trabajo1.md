@@ -29,7 +29,7 @@ Uno de los principales sistemas operativos orientados a la proporción de servic
 
 GNS3 es un software utilizado globalmente para emular, configurar, probar y solucionar problemas de redes virtuales y reales. GNS3 le permite ejecutar una pequeña topología que consta de solo unos pocos dispositivos en su computadora portátil, a aquellos que tienen muchos dispositivos alojados en múltiples servidores o incluso alojados en la nube. 
 
-**PROCEDIMIENTO**
+**Procedimiento**
 
 En el presente trabajo realizará la instalación de los sistemas operativos basados en linux en un entorno virtualizado para formar una red de datos.
 
