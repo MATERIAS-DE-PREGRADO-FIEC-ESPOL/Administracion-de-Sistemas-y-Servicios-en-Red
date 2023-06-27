@@ -28,9 +28,8 @@ Al finalizar la clase el estudiante será capaz de:
 - Implementar una pequeña red de área local de PCs con Linux es fácil. Sólo requiere una interfaz de  red en cada PC y los cables adecuados así como el dispositivo intermedio (enrutador, conmutador).
 
 <p align="center">
-  <img src="imagenes/assr_unid2_11.png" style="width: 40%; height: 180px; float: left; padding: 15px;" alt="linux">
+  <img src="imagenes/assr_unidad2_11_server_empresarial.png" alt="distribuciones" width="80%">
 </p>
-
 
 
 <a name="configred"> </a>
@@ -67,12 +66,12 @@ Los archivos que arrancan la configuración de red TCP/IP se encuentran dentro d
 /etc/sysconfig/network-scripts/: Este directorio contiene los scripts “ifup” para activar una interfaz específica, “ifdown” para deshabilitar una  interfaz específica. Cada interfaz de red tiene un archivo que tiene el prefijo ifcfg-<iinterfaz>
 
 <p align="center">
-  <img src="imagenes/assr_unid2_14.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_14.png" alt="distribuciones" width="100%">
 </p>
 
 
 <p align="center">
-  <img src="imagenes/assr_unid2_15.png" alt="distribuciones" width=120%">
+  <img src="imagenes/assr_unid2_15.png" alt="distribuciones" width="100%">
 </p>
 
 
@@ -182,7 +181,7 @@ Algunas de las funcionalidades principales que provee iproute2 son:
 - La herramienta IP es el punto central
 
 <p align="center">
-  <img src="imagenes/assr_unid2_16.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_16.png" alt="distribuciones" width="100%">
 </p>
 
 
@@ -194,7 +193,7 @@ Algunas de las funcionalidades principales que provee iproute2 son:
 **Traceroute:** Muestra la ruta que toman los paquetes  para llegar al destino, mostrando los enrutadores  intermedios.
 
 <p align="center">
-  <img src="imagenes/assr_unid2_17.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_17.png" alt="distribuciones" width="100%">
 </p>
 
 ## 💻 **Comando Ping**

@@ -182,11 +182,9 @@ Los servidores proxy operan como un  intermediario entre una red local y los  se
 
 Los protocolos soportados por squid son:
 
-
 <p align="center">
   <img src="imagenes/assr_unid2_7.png" alt="distribuciones" width="80%">
 </p>
-
 
 <p align="center">
   <img src="imagenes/assr_unid2_8.png" style="width: 30%; height: 150px; float: right; padding: 15px;" alt="redhat">
@@ -195,7 +193,6 @@ Los protocolos soportados por squid son:
 - Paquete: squid
 
 - Paquete para generación de reporte del squid: SARG
-
 
 <p align="center">
   <img src="imagenes/assr_unid2_9.png" alt="distribuciones" width="90%">
