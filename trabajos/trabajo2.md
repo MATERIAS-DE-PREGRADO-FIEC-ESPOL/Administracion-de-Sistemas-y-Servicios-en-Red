@@ -128,20 +128,20 @@ Instalado:
 [root@localhost acollaguazo]#
 ```
 
-## Paso 4. Configurar el servicio de proxy transparente en el archivo /etc/squid/squid.conf de acuerdo a los parámetros.
+## Paso 4. Configurar parámetros en el servicio de proxy transparente en el archivo /etc/squid/squid.conf descomentando las líneas mostradas.
 
 ```
 [root@srv1-linux adita]# cd /etc/squid/
 
 [root@srv1-linux squid]# more squid.conf
 
-Squid normally listens to port 3128**
+Squid normally listens to port 3128
 http_port 3128
 
 Uncomment and adjust the following to add a disk cache directory
 #Configuraremos el espacio que tendrá nuestro cache. El valor 100, quiere decir que dispondremos de 100MB de #cache en nuestro disco, podemos aumentarlo si deseamos almacenar mas cache y usar menos ancho de banda, no 
 
-#modificar los otros valores**
+#modificar los otros valores
 cache_dir ufs /var/spool/squid 100 16 256 
 
 # Recommended minimum configuration:
@@ -339,10 +339,11 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination         
 ```
 
-### Paso 13. Activar el servicio de iptables.
+### Paso 13. Reiniciar el servicio de iptables.
 
 ```
-[root@localhost firewalld]# systemctl start iptables
+[root@localhost firewalld]# service iptables restart
+Redirecting to /bin/systemctl restart iptables.service
 ```
 
 ### Paso 14. Verificar el estado activo del servicio de iptables.
