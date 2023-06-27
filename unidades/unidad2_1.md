@@ -40,8 +40,9 @@ El software del servidor File Transfer Protocol (FTP) consiste en un daemon FTP 
 Existen varios servidores FTP disponibles para su uso en sistemas  operativos Linux:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_2.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unidad2_1_ftp.png" alt="distribuciones" width=100%">
 </p>
+
 
 **Paso 1. Instalar el paquete vsftpd**
 
