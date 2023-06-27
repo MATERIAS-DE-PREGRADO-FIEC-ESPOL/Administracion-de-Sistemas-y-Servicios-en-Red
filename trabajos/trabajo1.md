@@ -8,7 +8,8 @@ remote_theme: pages-themes/cayman@v0.2.0
 ## Automatización de la administración de un servidor Linux
 
 ## 🎯 Objetivo de Aprendizaje
-Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
+Al finalizar el trabajo el estudiante será capaz de:
+- Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
 **Recursos:** VirtualBox / VMware
 

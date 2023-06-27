@@ -4,23 +4,30 @@ remote_theme: pages-themes/cayman@v0.2.0
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
 ## Trabajo Autónomo 2
-## Automatización de la administración de un servidor Linux
+## Enrutamiento entre servidores Linux
 
-## 🎯 Objetivo de Aprendizaje 
-Al finalizar la clase el estudiante será capaz de:
-- Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
+## 🎯 Objetivo de Aprendizaje
+
+Al finalizar el trabajo el estudiante será capaz de:
+- Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
+
 
 **Introducción**
+
 Squid es un proxy de caché para la Web compatible con HTTP, HTTPS, FTP y más. Reduce el ancho de banda y mejora los tiempos de respuesta almacenando en caché y reutilizando las páginas web más solicitadas. Squid dispone de amplios controles de acceso y es un excelente acelerador de servidores. Funciona en la mayoría de los sistemas operativos disponibles, incluido Windows, y tiene licencia GNU GPL.
 
+
 **Instrucciones**
+
 El formato del trabajo tiene habilitado recuadros de color amarillo para que llenen las respuestas.
 Los trabajos se reciben hasta la fecha planificada en el Aula Virtual.
 Coloque el nombre del archivo así “ASSR_TAA_GrupoB_Apellido1_ApellidoN”, siendo A el número del trabajo, B el número del grupo, N el último apellido del integrante del grupo.
 Una vez que haya desarrollado el trabajo, cada integrante del grupo contestará la encuesta de evaluación de los trabajos autónomos ingresando al enlace https://bit.ly/2UdUwrj
 
+
 **Actividades**
-La empresa Adita S.A. tiene un único servidor que contiene servicios de proxy. Debido a una falla eléctrica el servidor presente errores en el disco duro por lo cual el personal del área de infraestructura decide iniciar el proyecto de creación de una granja de servidores independientes para el servicio de proxy. Considerando lo mencionado, han contratado a un grupo de ingenieros especializados para que realicen las siguientes actividades:
+
+La empresa Adita S.A. tiene un único servidor que contiene servicios de proxy. Debido a una falla eléctrica el servidor presente errores en el disco duro por lo cual el personal del área de infraestructura decide iniciar el proyecto de creación de una granja de servidores independientes para el servicio de proxy. Considerando lo mencionado, han contratado a un grupo de ingenieros especializados para que realicen las siguientes actividades.
 
 
 ## Actividad 1: Instalación
@@ -159,19 +166,19 @@ http_access allow localnet   #Permitir el tráfico de la red interna
 
 ```
 
-### Paso 4. Activar el servicio squid.
+### Paso 5. Activar el servicio squid.
 
 ```
 [root@localhost squid]# service squid restart
 Redirecting to /bin/systemctl restart squid.service
 ```
 
-### Paso 5. Luego verificar que el estado del squid este activo.
+### Paso 6. Luego verificar que el estado del squid este activo.
 <p align="center">
   <img src="imagenes/assr_ta2_squid_status.png" alt="virtualmachine" width="80%">
 </p>
 
-### Paso 6. Crear el espacio swap.
+### Paso 7. Crear el espacio swap.
 
 ```
 [root@localhost squid]# squid -z
@@ -180,7 +187,7 @@ Redirecting to /bin/systemctl restart squid.service
 ```
 
 
-### Paso 7. Verificar que el protocolo y puerto del squid operativo.
+### Paso 8. Verificar que el protocolo y puerto del squid operativo.
 
 ```
 [root@localhost squid]# netstat -nl
@@ -203,7 +210,7 @@ raw6       0      0 :::58                   :::*                    7
 Active UNIX domain sockets (only servers)
 ```
 
-### Paso 8. Instalar el paquete de filtrado de paquetes iptables para proporcionar seguridad al squid.
+### Paso 9. Instalar el paquete de filtrado de paquetes iptables para proporcionar seguridad al squid.
 
 ```
 [root@localhost firewalld]# dnf install iptables-services
@@ -248,7 +255,7 @@ Instalado:
 ¡Listo!
 ```
 
-### Paso 9. Configurar en el archivo /etc/firewalld/rules.sh un script para habilitar reglas de firewall, que permiten la activación del acceso a internet desde la red interna y el uso de proxy transparente.
+### Paso 10. Configurar en el archivo /etc/firewalld/rules.sh un script para habilitar reglas de firewall, que permiten la activación del acceso a internet desde la red interna y el uso de proxy transparente.
 
 ```
 [root@localhost squid]# cd /etc/firewalld/
@@ -293,7 +300,7 @@ $IPT -t nat -A PREROUTING -i $LAN_IFACE -s $LAN_RANGE -p tcp --dport 80 -j REDIR
 ```
 
 
-### Paso 10. Ejecutar las reglas de firewall.
+### Paso 11. Ejecutar las reglas de firewall.
 
 ```
 [root@localhost firewalld]# ./rules.sh 
@@ -301,7 +308,7 @@ Cargando reglas para el servidor ... OK!!!
 ```
 
 
-### Paso 11. Verificar las reglas de iptables en las tablas filter y nat.
+### Paso 12. Verificar las reglas de iptables en las tablas filter y nat.
 
 ```
 [root@localhost firewalld]# iptables -nL -t nat
@@ -332,13 +339,13 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination         
 ```
 
-### Paso 12. Activar el servicio de iptables.
+### Paso 13. Activar el servicio de iptables.
 
 ```
 [root@localhost firewalld]# systemctl start iptables
 ```
 
-### Paso 13. Verificar el estado activo del servicio de iptables.
+### Paso 14. Verificar el estado activo del servicio de iptables.
 
 <p align="center">
   <img src="imagenes/assr_ta2_squid_restart.png" alt="virtualmachine" width="80%">
