@@ -50,13 +50,13 @@ Figura 1. Creación de la máquina virtual en VirtualBox.
 Figura 2. Proceso de instalación de Raspbian.
 
 <p align="center">
-  <img src="imagenes/assr_ta_2.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
+  <img src="imagenes/assr_ta_2.png" alt="industria" width="70%">
 </p>
 
 Figura 3. Inicialización de Raspbian.
 
 <p align="center">
-  <img src="imagenes/assr_ta_3.png" altFigura 3. Inicialización de Raspbian.="industria" width="70%">
+  <img src="imagenes/assr_ta_3.png" alt="industria" width="70%">
 </p>
 
 5. Describa las características técnicas de la distribución seleccionada.
