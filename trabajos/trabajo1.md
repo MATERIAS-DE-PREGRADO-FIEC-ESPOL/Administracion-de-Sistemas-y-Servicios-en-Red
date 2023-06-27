@@ -7,7 +7,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 
 ## Automatización de la administración de un servidor Linux
 
-## 🎯 Objetivo de Aprendizaje 
+## 🎯 Objetivo de Aprendizaje
 Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
 **Recursos:** VirtualBox / VMware
@@ -21,7 +21,7 @@ Utilizar los sistemas operativos basados en Linux mediante una interfaz de admin
 + Coloque el nombre del archivo así **ASSR_TAA_Apellido_Nombre**, siendo A el número del trabajo.
 + Una vez que haya desarrollado el trabajo, cada integrante del grupo contestará la encuesta de evaluación de los trabajos autónomos ingresando al enlace https://bit.ly/2UdUwrj
 
-**INTRODUCCIÓN**
+**Introducción**
 
 Un sistema operativo de red permite mantener a dos o más ordenadores unidos mediante algún medio de comunicación ya sea física o no, con el propósito de poder compartir recursos e información del sistema. En este entorno cada dispositivo mantiene su propio sistema operativo, así como su sistema de archivos local. Los sistemas operativos de red pueden dividirse en 2 grupos: aquellos que utilizan un modelo de cliente-servidor (Windows Server, Linux), y en los que no existe un servidor principal sino que utilizan un modelo entre iguales, en cual las estaciones comparten sus recursos de igual a igual. 
 
@@ -33,7 +33,7 @@ GNS3 es un software utilizado globalmente para emular, configurar, probar y solu
 
 En el presente trabajo realizará la instalación de los sistemas operativos basados en linux en un entorno virtualizado para formar una red de datos.
 
-**ACTIVIDADES**
+**Actividades**
 
 1.	Instale el software de virtualización de elección. Puede usar VirtualBox o VMware para esto.
 2.	Descargue el sistema operativo de su elección. Para esto debe escoger una distribución basada en Linux que NO sea CentOS. Un ejemplo de una distribución ligera de Linux puede ser el sistema operativo de Raspberry Pi.
