@@ -207,13 +207,13 @@ Algunas de las funcionalidades principales que provee iproute2 son:
 + Un ping exitoso se ve así:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_18.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_18.png" alt="distribuciones" width="100%">
 </p>
 
 Si el comando ping falla, aparecerá un mensaje que indica “Host de destino inalcanzable”:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_19.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_19.png" alt="distribuciones" width="100%">
 </p>
 
 ## COMANDOS ETHTOOL O MII-TOOL
@@ -246,7 +246,7 @@ drv probe link  Link detected: yes
 + Se usa para mostrar información de configuración de red:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_20.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_20.png" alt="distribuciones" width="100%">
 </p>
 
 
@@ -269,7 +269,7 @@ ip [options] Object Command
 ## 💻 **Comandos Ifconfig vs. IP**
 
 <p align="center">
-  <img src="imagenes/assr_unid2_21.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_21.png" alt="distribuciones" width="100%">
 </p>
 
 ## 💻 **Comando Route**
@@ -277,14 +277,14 @@ ip [options] Object Command
 El comando de ruta se puede usar para ver una tabla que describe dónde se envían los paquetes 
 
 <p align="center">
-  <img src="imagenes/assr_unid2_22.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_22.png" alt="distribuciones" width="100%">
 </p>
 
 + Cualquier paquete de red enviado a una máquina en la red 192.168.1 no se envía a la puerta de enlace (*  indica "sin puerta de enlace").
 + Todos los demás paquetes de red se envían al host con la dirección IP 192.168.1.1 (el enrutador).
 
 <p align="center">
-  <img src="imagenes/assr_unid2_23.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_23.png" alt="distribuciones" width="100%">
 </p>
 
 **Recordatorio: Un enrutador o puerta de enlace es una máquina que permitirá que los hosts de una red se comuniquen con otra red.**
@@ -294,13 +294,13 @@ El comando de ruta se puede usar para ver una tabla que describe dónde se enví
 + El comando netstat se usa para mostrar información sobre las conexiones de red, así como para mostrar la  tabla de enrutamiento similar al comando route:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_24.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_24.png" alt="distribuciones" width="100%">
 </p>
 
 + El comando netstat también se usa comúnmente para mostrar puertos abiertos:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_25.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_25.png" alt="distribuciones" width="100%">
 </p>
 
 ## 💻 **Comando SS**
@@ -318,7 +318,7 @@ El comando dig realizará consultas en el servidor DNS para determinar si la inf
 Por ejemplo, el comando dig se usa para determinar la dirección IP del host example.com:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_27.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_27.png" alt="distribuciones" width="100%">
 </p>
 
 El servidor DNS tiene la dirección de IP (192.168.1.2) a la información de traducción de nombre de host  (example.com) en su base de datos.
@@ -326,7 +326,7 @@ El servidor DNS tiene la dirección de IP (192.168.1.2) a la información de tra
 ## 💻 Comandos DIG y NSLOOKUP
 
 <p align="center">
-  <img src="imagenes/assr_unid2_28.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_28.png" alt="distribuciones" width="100%">
 </p>
 
 ```
@@ -343,13 +343,13 @@ ns.unc.edu	internet address = 152.2.21.1  ns2.unc.edu	internet address = 152.2.2
 
 + El comando host funciona con DNS para asociar un nombre de host con una dirección IP:
 <p align="center">
-  <img src="imagenes/assr_unid2_29.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_29.png" alt="distribuciones" width="100%">
 </p>
 
 + El comando host también se puede usar en reversa si se conoce una dirección IP, pero no el nombre de  dominio:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_30.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_30.png" alt="distribuciones" width="100%">
 </p>
 
 + Existen otras opciones para consultar los diversos aspectos de un DNS como CNAME (nombre canónico) y  SOA (inicio de autoridad).
@@ -358,14 +358,14 @@ ns.unc.edu	internet address = 152.2.21.1  ns2.unc.edu	internet address = 152.2.2
 
 El comando “telnet” establece una conexión a un host (ya sea un nombre de sistema o una  dirección IP) mediante puerto. Si un puerto se omite, el puerto predeterminado de 23 se  asume. Si se omite el host, telnet entra en un modo similar al FTP.
 <p align="center">
-  <img src="imagenes/assr_unid2_31.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_31.png" alt="distribuciones" width="80%">
 </p>
 ## 💻 **Comando SSH**
 
 El comando ssh le permitirá conectarse a otra máquina a través de la red, iniciar sesión y luego realizar  tareas en la máquina remota:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_32.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_32.png" alt="distribuciones" width="80%">
 </p>
 
 To return back to the local machine, use the **exit** command.
@@ -386,7 +386,7 @@ To return back to the local machine, use the **exit** command.
 El comando “lynx” o “curl” permite navegar desde la línea de comandos, para verificar la resolución DNS.
 
 <p align="center">
-  <img src="imagenes/assr_unid2_34.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_34.png" alt="distribuciones" width="80%">
 </p>
 
 ## 💻 **Configuración de Interfaz de Red en DEBIAN/UBUNTU**
