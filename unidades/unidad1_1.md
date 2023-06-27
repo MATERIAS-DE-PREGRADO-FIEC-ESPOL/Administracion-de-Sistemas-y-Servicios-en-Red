@@ -50,21 +50,27 @@ Las características que componen Linux incluyen lo siguiente:
 - Herramientas de programación
 
 <a name="industria"> </a>
+
 ### 🕸️ **Linux en la industria**
+
 <p align="center">
   <img src="imagenes/industria-linux.png" alt="industria" width="70%">
 </p>
 
 Los trabajos de Linux están en todas partes, las habilidades de Linux están en demanda en casi todas las industrias y categorías de trabajo en el planeta.
 
+
 <a name="nucleo"> </a>
+
 ### 🕸️ **Linux es un kernel**
 Linux significa el *núcleo del sistema*, que es el controlador central de todo lo que sucede en la computadora.
 Linux es una combinación de software llamado GNU/Linux, que define el sistema operativo.
 - GNU es el software gratuito que proporciona equivalentes de código abierto de muchos comandos comunes de UNIX.
 - La parte de Linux de esta combinación es el kernel de Linux, que es el núcleo del sistema operativo.
 
+
 <a name="open_source"> </a>
+
 ### 🕸️ **Linux es open-source**
 Históricamente, la mayoría del software se ha emitido bajo una licencia de código cerrado.
 

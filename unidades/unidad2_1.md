@@ -101,10 +101,8 @@ CNAME: Este registro asocia un alias con el nombre de host canónico de  un host
 PTR: Este tipo de registro se utiliza para asociar nombres en el dominio  in-addr.arpa con nombres de host.
 
 <p align="center">
-  <img src="imagenes/assr_unid2_3.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_3.png" alt="industria" width="70%">
 </p>
-
-
 
 - Paquete del servicio dns: bind, bind-chroot, bind-utils
 
@@ -130,6 +128,7 @@ file "/etc/bind/db.192.168.0";
 <p align="center">
   <img src="imagenes/assr_unid2_4.png" alt="distribuciones" width=80%">
 </p>
+
 <p align="center">
   <img src="imagenes/assr_unid2_5.png" alt="distribuciones" width=80%">
 </p>
