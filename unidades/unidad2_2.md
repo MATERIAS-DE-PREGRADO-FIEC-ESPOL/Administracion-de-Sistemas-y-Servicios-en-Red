@@ -17,7 +17,7 @@ Al finalizar la clase el estudiante será capaz de:
 - [Configuración de red](#configred)
 - [Interfaces virtuales](#virtuales)
 - [Linux como un router](#router)
-- [Enrutamiento avanzado](avanzado)
+- [Enrutamiento avanzado](#avanzado)
 
 <a name="introduccion"> </a>
 
@@ -166,7 +166,7 @@ net.ipv4.ip_forward = 1
 <a name="avanzado"> </a>
 
 ## 💻 Enrutamiento avanzado
-Introducción a IPROUTE2
+
 + Este paquete es llamado “iproute” es un conjunto de herramientas para administrar interfaces de red y conexiones en sistemas  Linux.
 + Extiende las características similares a las provistas por dispositivos exclusivamente dedicados al ruteo y control de tráfico.
 + Este paquete reemplaza completamente las funcionalidades presentes en ifconfig, route, y ARP.
