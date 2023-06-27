@@ -1,30 +1,65 @@
-## 💻 **Enrutamiento en Linux**
+---
+remote_theme: pages-themes/cayman@v0.2.0
+---
+[Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
-Linux soporta una implementación completa de los protocolos de red TCP/IP, lo cual ha resultado ser  hasta ahora el mejor mecanismo de comunicación entre ordenadores en todo el mundo.
 
+# Unidad 2: Internet y servicios en red
 
-Implementar una pequeña red de área local de PCs con Linux es fácil. Sólo requiere una interfaz de  red en cada PC y los cables adecuados así como el dispositivo intermedio (enrutador, conmutador).
+# 🎯 **Objetivo de Aprendizaje**
 
-## 💻 **Diseño de red empresarial**
+Al finalizar la clase el estudiante será capaz de:
+
+- Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
+
+# 2.2 Enrutamiento en Linux
+- [Introducción](#introduccion)
+- [Configuración de red](#configred)
+- [Interfaces virtuales](#virtuales)
+- [Linux como un router](#router)
+- [Enrutamiento avanzado](avanzado)
+
+<a name="introduccion"> </a>
+
+## 💻 Introducción
+
+- Linux soporta una implementación completa de los protocolos de red TCP/IP, lo cual ha resultado ser  hasta ahora el mejor mecanismo de comunicación entre ordenadores en todo el mundo.
+
+- Implementar una pequeña red de área local de PCs con Linux es fácil. Sólo requiere una interfaz de  red en cada PC y los cables adecuados así como el dispositivo intermedio (enrutador, conmutador).
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_12.png" alt="distribuciones" width=40%">
+  <img src="imagenes/assr_unid2_11.png" style="width: 40%; height: 180px; float: left; padding: 15px;" alt="linux">
 </p>
 
-<p align="center">
-  <img src="../imagenes/assr_unid2_11.png" alt="distribuciones" width=100%">
-</p>
 
-## 💻 **Archivos de configuración de Red**
 
-**Comando ifconfig**
+<a name="configred"> </a>
 
-<p align="center">
-  <img src="../imagenes/assr_unid2_13.png" alt="distribuciones" width=100%">
-</p>
+## 💻 Configuración de red
 
-## 💻 **Enrutamiento en Linux**
-### Archivos de configuración de red
+***Comando ifconfig:*** Configurar una interfaz de red.
+
+```
+[root@localhost ~]# ifconfig
+ens160: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.16.17.128  netmask 255.255.255.0  broadcast 172.16.17.255
+        inet6 fe80::20c:29ff:fe8c:1508  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:8c:15:08  txqueuelen 1000  (Ethernet)
+        RX packets 229826  bytes 342319081 (326.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 85598  bytes 4703284 (4.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 50  memory 0x3fe00000-3fe20000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 25  bytes 2581 (2.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 25  bytes 2581 (2.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
 
 Los archivos que arrancan la configuración de red TCP/IP se encuentran dentro del directorio /etc. Estos archivos  son leídos y puestos en marcha por el demónico llamado “network” al momento de booteo.
 
@@ -32,17 +67,18 @@ Los archivos que arrancan la configuración de red TCP/IP se encuentran dentro d
 /etc/sysconfig/network-scripts/: Este directorio contiene los scripts “ifup” para activar una interfaz específica, “ifdown” para deshabilitar una  interfaz específica. Cada interfaz de red tiene un archivo que tiene el prefijo ifcfg-<iinterfaz>
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_14.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_14.png" alt="distribuciones" width=100%">
 </p>
 
-##💻 **Enrutamiento en Linux**
-Archivos de Configuración de Red
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_15.png" alt="distribuciones" width=120%">
+  <img src="imagenes/assr_unid2_15.png" alt="distribuciones" width=120%">
 </p>
 
-## 💻 **Interfaces Virtuales**
+
+<a name="virtuales"> </a>
+
+## 💻 Interfaces Virtuales
 
 La configuración de múltiples direcciones IP en una misma interfaz de red física se denomina “IP  Aliasing”. Esto resulta útil cuando se requiere segmentar la red interna en varios prefijos de red sin  necesidad de una nueva interfaz de red.
 
@@ -109,7 +145,11 @@ inet 192.168.1.1/24 brd 192.168.1.255 scope global enp0s3:1
 valid_lft forever preferred_lft forever  inet6 fe80::a00:27ff:fed2:5cfe/64 scope link
 valid_lft forever preferred_lft forever
 ```
-## 💻 **Linux como en enrutador**
+
+
+<a name="router"> </a>
+
+## 💻 Linux como un enrutador
 
 Normalmente, un sistema Linux no envía los paquetes que recibe de un sistema que son da otro sistema. Si Linux  actuará como un router, debe aceptar estos paquetes y enviarlos a la red de destino. Para activar esta función,  debe modificar un archivo en el directorio /proc:
 
@@ -122,7 +162,11 @@ Este comando habilita el IP forwarding. La configuración permanente de esta opc
 ```
 net.ipv4.ip_forward = 1
 ```
-## 💻 **Enrutamiento en Linux**
+
+
+<a name="avanzado"> </a>
+
+## 💻 Enrutamiento avanzado
 Introducción a IPROUTE2
 + Este paquete es llamado “iproute” es un conjunto de herramientas para administrar interfaces de red y conexiones en sistemas  Linux.
 + Extiende las características similares a las provistas por dispositivos exclusivamente dedicados al ruteo y control de tráfico.
@@ -135,14 +179,12 @@ Algunas de las funcionalidades principales que provee iproute2 son:
 3. Balanceo de carga
 4. Definición de túneles.
 
-## 💻 Enrutamiento en Linux
-Explorando la configuración con IPROUTE2
-
-+ La herramienta IP es el punto central
+- La herramienta IP es el punto central
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_16.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_16.png" alt="distribuciones" width=100%">
 </p>
+
 
 ## 💻 **Comandos Ping y Traceroute**
 
@@ -152,7 +194,7 @@ Explorando la configuración con IPROUTE2
 **Traceroute:** Muestra la ruta que toman los paquetes  para llegar al destino, mostrando los enrutadores  intermedios.
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_17.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_17.png" alt="distribuciones" width=100%">
 </p>
 
 ## 💻 **Comando Ping**
@@ -165,13 +207,13 @@ Explorando la configuración con IPROUTE2
 + Un ping exitoso se ve así:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_18.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_18.png" alt="distribuciones" width=100%">
 </p>
 
 Si el comando ping falla, aparecerá un mensaje que indica “Host de destino inalcanzable”:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_19.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_19.png" alt="distribuciones" width=100%">
 </p>
 
 ## COMANDOS ETHTOOL O MII-TOOL
@@ -204,7 +246,7 @@ drv probe link  Link detected: yes
 + Se usa para mostrar información de configuración de red:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_20.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_20.png" alt="distribuciones" width=100%">
 </p>
 
 
@@ -227,7 +269,7 @@ ip [options] Object Command
 ## 💻 **Comandos Ifconfig vs. IP**
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_21.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_21.png" alt="distribuciones" width=100%">
 </p>
 
 ## 💻 **Comando Route**
@@ -235,14 +277,14 @@ ip [options] Object Command
 El comando de ruta se puede usar para ver una tabla que describe dónde se envían los paquetes 
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_22.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_22.png" alt="distribuciones" width=100%">
 </p>
 
 + Cualquier paquete de red enviado a una máquina en la red 192.168.1 no se envía a la puerta de enlace (*  indica "sin puerta de enlace").
 + Todos los demás paquetes de red se envían al host con la dirección IP 192.168.1.1 (el enrutador).
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_23.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_23.png" alt="distribuciones" width=100%">
 </p>
 
 **Recordatorio: Un enrutador o puerta de enlace es una máquina que permitirá que los hosts de una red se comuniquen con otra red.**
@@ -252,13 +294,13 @@ El comando de ruta se puede usar para ver una tabla que describe dónde se enví
 + El comando netstat se usa para mostrar información sobre las conexiones de red, así como para mostrar la  tabla de enrutamiento similar al comando route:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_24.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_24.png" alt="distribuciones" width=100%">
 </p>
 
 + El comando netstat también se usa comúnmente para mostrar puertos abiertos:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_25.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_25.png" alt="distribuciones" width=100%">
 </p>
 
 ## 💻 **Comando SS**
@@ -276,7 +318,7 @@ El comando dig realizará consultas en el servidor DNS para determinar si la inf
 Por ejemplo, el comando dig se usa para determinar la dirección IP del host example.com:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_27.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_27.png" alt="distribuciones" width=100%">
 </p>
 
 El servidor DNS tiene la dirección de IP (192.168.1.2) a la información de traducción de nombre de host  (example.com) en su base de datos.
@@ -284,7 +326,7 @@ El servidor DNS tiene la dirección de IP (192.168.1.2) a la información de tra
 ## 💻 Comandos DIG y NSLOOKUP
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_28.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_28.png" alt="distribuciones" width=100%">
 </p>
 
 ```
@@ -301,13 +343,13 @@ ns.unc.edu	internet address = 152.2.21.1  ns2.unc.edu	internet address = 152.2.2
 
 + El comando host funciona con DNS para asociar un nombre de host con una dirección IP:
 <p align="center">
-  <img src="../imagenes/assr_unid2_29.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_29.png" alt="distribuciones" width=100%">
 </p>
 
 + El comando host también se puede usar en reversa si se conoce una dirección IP, pero no el nombre de  dominio:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_30.png" alt="distribuciones" width=100%">
+  <img src="imagenes/assr_unid2_30.png" alt="distribuciones" width=100%">
 </p>
 
 + Existen otras opciones para consultar los diversos aspectos de un DNS como CNAME (nombre canónico) y  SOA (inicio de autoridad).
@@ -316,14 +358,14 @@ ns.unc.edu	internet address = 152.2.21.1  ns2.unc.edu	internet address = 152.2.2
 
 El comando “telnet” establece una conexión a un host (ya sea un nombre de sistema o una  dirección IP) mediante puerto. Si un puerto se omite, el puerto predeterminado de 23 se  asume. Si se omite el host, telnet entra en un modo similar al FTP.
 <p align="center">
-  <img src="../imagenes/assr_unid2_31.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_31.png" alt="distribuciones" width=80%">
 </p>
 ## 💻 **Comando SSH**
 
 El comando ssh le permitirá conectarse a otra máquina a través de la red, iniciar sesión y luego realizar  tareas en la máquina remota:
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_32.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_32.png" alt="distribuciones" width=80%">
 </p>
 
 To return back to the local machine, use the **exit** command.
@@ -344,7 +386,7 @@ To return back to the local machine, use the **exit** command.
 El comando “lynx” o “curl” permite navegar desde la línea de comandos, para verificar la resolución DNS.
 
 <p align="center">
-  <img src="../imagenes/assr_unid2_34.png" alt="distribuciones" width=80%">
+  <img src="imagenes/assr_unid2_34.png" alt="distribuciones" width=80%">
 </p>
 
 ## 💻 **Configuración de Interfaz de Red en DEBIAN/UBUNTU**

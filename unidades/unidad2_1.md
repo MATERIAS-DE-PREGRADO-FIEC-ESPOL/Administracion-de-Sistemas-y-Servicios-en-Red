@@ -12,7 +12,7 @@ Al finalizar la clase el estudiante será capaz de:
 
 - Experimentar la gestión de servicios en red incluyendo servicios de Internet más usados  para el análisis de utilización de recursos computacionales que cumplan con  requerimientos específicos.
 
-# 2.1. Administración de Servicios en Red
+# 2.1 Administración de Servicios en Red
 - [Conceptos básicos](#conceptos)
 - [Protocolo FTP](#ftp)
 - [Protocolo DNS](#dns)
@@ -159,7 +159,7 @@ type
 + Servicio de Anti-spam: SpamAssassin  http://spamassassin.apache.org/
 
 
-<a name="http"> </a>
+<a name="proxy"> </a>
 
 ## 💻 Protocolo HTTP
 
@@ -186,10 +186,4 @@ Los protocolos soportados por squid son:
 
 <p align="center">
   <img src="imagenes/assr_unid2_9.png" alt="distribuciones" width=90%">
-</p>
-
-## 💻 **Protocolos de Servicios en Red**
-
-<p align="center">
-  <img src="imagenes/assr_unid2_10.png" alt="distribuciones" width=90%">
 </p>

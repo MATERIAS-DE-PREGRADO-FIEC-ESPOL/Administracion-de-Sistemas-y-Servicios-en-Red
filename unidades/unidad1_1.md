@@ -9,7 +9,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 Al finalizar la clase el estudiante será capaz de:
 - Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
-# 1.1. Distribuciones Linux
+# 1.1 Distribuciones Linux
 - [¿Qué es Linux?](#definicion)
     - [Linux en la industria](#industria)
     - [Linux es un kernel](#nucleo)
@@ -25,7 +25,9 @@ Al finalizar la clase el estudiante será capaz de:
 
 
 <a name="definicion"> </a>
+
 ## 💻 ¿Qué es Linux?
+
 <p align="center">
   <img src="imagenes/terminal-linux.png" style="width: 30%; height: 180px; float: left; padding: 15px;" alt="linux">
 </p>

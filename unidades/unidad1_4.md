@@ -9,7 +9,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 Al finalizar la clase el estudiante será capaz de:
 - Utilizar los sistemas operativos basados en Linux mediante una interfaz de administración que permita el manejo adecuado de los recursos y servicios.
 
-## 1.4. Mantenimiento y respaldo del sistema
+## 1.4 Mantenimiento y respaldo del sistema
 - [Comprimir archivos](#comprimir)
 - [Almacenar archivos](#almacenar)
 - [Archivos ZIP](#zip)
