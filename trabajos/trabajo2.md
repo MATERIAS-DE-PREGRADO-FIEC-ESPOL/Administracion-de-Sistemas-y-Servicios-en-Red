@@ -128,7 +128,7 @@ Instalado:
 [root@localhost acollaguazo]#
 ```
 
-## Paso 4. Configurar parámetros en el servicio de proxy transparente en el archivo /etc/squid/squid.conf descomentando las líneas mostradas.
+### Paso 4. Configurar parámetros en el servicio de proxy transparente en el archivo /etc/squid/squid.conf descomentando las líneas mostradas.
 
 ```
 [root@srv1-linux adita]# cd /etc/squid/
