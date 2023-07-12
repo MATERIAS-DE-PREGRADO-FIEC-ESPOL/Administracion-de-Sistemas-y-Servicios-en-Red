@@ -314,6 +314,7 @@ Observe que hay muchos directorios con nombres descriptivos que incluyen ```/boo
 
 
 <a name="home"> </a>
+
 ### 🕸️ Directorio Home
 
 - En la mayoría de las distribuciones de Linux hay un directorio llamado home debajo del directorio root /.

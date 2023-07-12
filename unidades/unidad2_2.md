@@ -18,6 +18,12 @@ Al finalizar la clase el estudiante será capaz de:
 - [Interfaces virtuales](#virtuales)
 - [Linux como un router](#router)
 - [Enrutamiento avanzado](#avanzado)
+- [Instalación de Ubuntu Server](#ubuntu)
+- [Herramientas de soporte técnico](#kit)
+  - [Ping y Traceroute](#ping)
+  - [Ethtool y Mii-tool](#ethtool)
+  - [Ifconfig](#ifconfig)
+  - [IP](#ip)
 
 <a name="introduccion"> </a>
 
@@ -178,35 +184,102 @@ Algunas de las funcionalidades principales que provee iproute2 son:
 3. Balanceo de carga
 4. Definición de túneles.
 
-- La herramienta IP es el punto central
+
+<a name="ubuntu"> </a>
+
+## 💻 Instalación de Ubuntu Server
 
 <p align="center">
-  <img src="imagenes/assr_unid2_16.png" alt="distribuciones" width="100%">
+  <img src="imagenes/assr_unidad2_2_paso1.png" alt="paso1" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso2.png" alt="paso2" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso3.png" alt="paso3" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso4.png" alt="paso4" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso5.png" alt="paso5" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso6.png" alt="paso6" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso7.png" alt="paso7" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso8.png" alt="paso8" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso9.png" alt="paso9" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso10.png" alt="paso10" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso11.png" alt="paso11" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso12.png" alt="paso12" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso13.png" alt="paso13" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso14.png" alt="paso14" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso15.png" alt="paso15" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso16.png" alt="paso16" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso17.png" alt="paso17" width="100%">
+</p>
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_paso18.png" alt="paso18" width="100%">
 </p>
 
 
-## 💻 **Comandos Ping y Traceroute**
+<a name="kit"> </a>
 
+## 💻 Herramientas de soporte técnico
 
-**Ping:** Envía un datagrama ICMP ECHO_REQUEST al  destino, esperando un ECHO_RESPONSE de ICMP. Ping  se utiliza con frecuencia para comprobar la  conectividad de red básica.
+<a name="ping"> </a>
 
-**Traceroute:** Muestra la ruta que toman los paquetes  para llegar al destino, mostrando los enrutadores  intermedios.
+### 🕸️ Ping y Traceroute
 
-<p align="center">
-  <img src="imagenes/assr_unid2_17.png" alt="distribuciones" width="100%">
-</p>
+- Ping: Envía un datagrama ICMP ECHO_REQUEST al  destino, esperando un ECHO_RESPONSE de ICMP. Ping  se utiliza con frecuencia para comprobar la  conectividad de red básica.
 
-## 💻 **Comando Ping**
+- Traceroute: Muestra la ruta que toman los paquetes  para llegar al destino, mostrando los enrutadores  intermedios.
 
-+ El comando ping se puede usar para determinar si otra máquina es "accesible".
+El comando ping se puede usar para determinar si otra máquina es "accesible". Por defecto, el comando ping continuará enviando paquetes sin fin. Use la opción -c seguido de un número para limitar cuántos pings enviar.
 
-+ Por defecto, el comando ping continuará enviando paquetes sin fin.
-
-+ Use la opción -c seguido de un número para limitar cuántos pings enviar.
-+ Un ping exitoso se ve así:
+Un ping exitoso se ve así:
 
 <p align="center">
-  <img src="imagenes/assr_unid2_18.png" alt="distribuciones" width="100%">
+  <img src="imagenes/assr_unidad2_2_ping.png" alt="ping" width="100%">
 </p>
 
 Si el comando ping falla, aparecerá un mensaje que indica “Host de destino inalcanzable”:
@@ -215,49 +288,48 @@ Si el comando ping falla, aparecerá un mensaje que indica “Host de destino in
   <img src="imagenes/assr_unid2_19.png" alt="distribuciones" width="100%">
 </p>
 
-## COMANDOS ETHTOOL O MII-TOOL
+El traceroute muestra el camino hacia una dirección IP de destino:
+
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_traceroute.png" alt="ping" width="100%">
+</p>
+
+
+<a name="ethtool"> </a>
+
+### 🕸️ Ethtool y Mii-tool
 
 El comando “ethtool” permite verificar el estado de conexión de las interfaz.
 
+<p align="center">
+  <img src="imagenes/assr_unidad2_2_ethtool.png" alt="distribuciones" width="100%">
+</p>
 
-```
 
-[root@linux network-scripts]# ethtool enp0s3  
-Settings for enp0s3:  10baseT/Half 10baseT/Full  
-Supported ports: [ TP ] 100baseT/Half 100baseT/Full
-                        1000baseT/Full
-Supported pause frame use: No  Supports auto-negotiation: Yes
-Advertised link modes: 10baseT/Half 10baseT/Full  
-                       100baseT/Half 100baseT/Full  
-                       1000baseT/Full
-Advertised pause frame use: No  Advertised auto-negotiation: Yes  Speed: 1000Mb/s
-Duplex: Full
-Port: Twisted Pair  PHYAD: 0
-Transceiver: internal
-Auto-negotiation: on  MDI-X: off (auto)  Supports Wake-on: umbg  Wake-on: d
-Current message level: 0x00000007 (7)
-drv probe link  Link detected: yes
-```
+<a name="ifconfig"> </a>
 
-## 💻 **Comando Ifconfig**
+### 🕸️ Ifconfig
 
-+ El comando ifconfig significa ”configuración de interfaz".
-+ Se usa para mostrar información de configuración de red:
+- El comando ifconfig significa ”configuración de interfaz".
+- Se usa para mostrar información de configuración de red:
 
 <p align="center">
   <img src="imagenes/assr_unid2_20.png" alt="distribuciones" width="100%">
 </p>
 
 
-+ En la salida anterior, la dirección IP del dispositivo de red primario (eth0) es 192.168.1.2 y el dispositivo está  actualmente activo (UP).
+- En la salida anterior, la dirección IP del dispositivo de red primario (eth0) es 192.168.1.2 y el dispositivo está  actualmente activo (UP).
 
-## 💻 **Comando IP**
 
-+ El comando ip está reemplazando el comando ifconfig.
+<a name="ip"> </a>
 
-+ El comando ip ha aumentado la funcionalidad y el conjunto de opciones.
+### 🕸️ IP
 
-+ El formato para el comando ip es el siguiente:
+- El comando ip está reemplazando el comando ifconfig.
+
+- El comando ip ha aumentado la funcionalidad y el conjunto de opciones.
+
+- El formato para el comando ip es el siguiente:
 
 ```
 ip [options] Object Command
