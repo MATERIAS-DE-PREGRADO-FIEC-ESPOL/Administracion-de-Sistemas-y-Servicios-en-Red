@@ -23,7 +23,7 @@ Mientras que MySQL es un sistema de gestión de base de datos relacional de soft
 
 1) Utilice Windows o una máquina virtual con la distribución de Ubuntu.
 
-2) Descargue el dataset [Netflix Userbase](imagenes/Netflix%20Userbase.csv).
+2) Descargue el dataset [Netflix Userbase](dataset/Netflix%20Userbase.csv).
 
 **Acerca del dataset:**
 - El conjunto de datos proporciona una instantánea de una muestra de la base de usuarios de Netflix, mostrando diversos aspectos de las suscripciones de los usuarios, los ingresos, los detalles de la cuenta y la actividad. Cada fila representa a un usuario único, identificado por su ID de usuario. El conjunto de datos incluye información como el tipo de suscripción del usuario (Básica, Estándar o Premium), los ingresos mensuales generados por su suscripción, la fecha en la que se unió a Netflix (Fecha de suscripción), la fecha de su último pago (Fecha del último pago) y el país en el que se encuentra. 
