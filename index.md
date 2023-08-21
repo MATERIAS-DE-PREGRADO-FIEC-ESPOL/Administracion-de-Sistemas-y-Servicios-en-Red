@@ -10,22 +10,22 @@
 
 ## UNIDADES
 * Unidad 1: Internet y servicios en red
-    * [1.1. Distribuciones Linux](unidades/unidad1_1.md)
-    * [1.2. Software Linux](unidades/unidad1_2.md)
-    * [1.3. Administración del sistema](unidades/unidad1_3.md)
-    * [1.4. Mantenimiento y respaldo del sistema](unidades/unidad1_4.md)
+    * [1.1 Distribuciones Linux](unidades/unidad1_1.md)
+    * [1.2 Software Linux](unidades/unidad1_2.md)
+    * [1.3 Administración del sistema](unidades/unidad1_3.md)
+    * [1.4 Mantenimiento y respaldo del sistema](unidades/unidad1_4.md)
 
 * Unidad 2: Internet y servicios en red
-    * [2.1. Administración de servicios en red](unidades/unidad2_1.md)
-    * [2.2. Enrutamiento en Linux](unidades/unidad2_2.md)
-    * [2.3. Linux en sistemas embebidos](unidades/unidad2_3.md)
-    * [2.4. Servicios para análisis de datos](unidades/unidad2_4.md)
+    * [2.1 Administración de servicios en red](unidades/unidad2_1.md)
+    * [2.2 Enrutamiento en Linux](unidades/unidad2_2.md)
+    * [2.3 Linux en sistemas embebidos](unidades/unidad2_3.md)
+    * [2.4 Servicios para análisis de datos](unidades/unidad2_4.md)
 
 * Unidad 3. Tecnologías web
-    * [3.1. Internet y servicios web](unidades/unidad3_1.md)
-    * [3.2. RESTful API](unidades/unidad3_2.md)
-    * [3.3. Métodos HTTP y operaciones CRUD](unidades/unidad3_3.md)
-    * [3.4. Almacenamiento de datos](unidades/unidad3_4.md)
+    * [3.1 Internet y servicios web](unidades/unidad3_1.md)
+    * [3.2 RESTful API](unidades/unidad3_2.md)
+    * [3.3 Métodos HTTP y operaciones CRUD](unidades/unidad3_3.md)
+    * [3.4 Almacenamiento de datos](unidades/unidad3_4.md)
 
 * Unidad 4. Desarrollo de aplicaciones web
     * [4.1. Arquitectura de aplicaciones web](unidades//unidad4_1.md)
