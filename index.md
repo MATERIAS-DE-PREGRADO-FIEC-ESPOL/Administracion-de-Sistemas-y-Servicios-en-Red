@@ -34,9 +34,9 @@
     * [4.4. Despliegue de una aplicación web](unidades/unidad4_1.md)
 
 ## TRABAJOS AUTÓNOMOS
-* [ASSR TA1 Automatización de la administración de un servidor Linux](trabajos/trabajo1.md)
-* [ASSR TA2 Enrutamiento entre servidores Linux](trabajos/trabajo2.md)
-* [ASSR Trabajo 3 Desarrollo web con base de datos](trabajos/trabajo3.md)
+* [ASSR Trabajo autónomo 1 Automatización de la administración de un servidor Linux](trabajos/trabajo1.md)
+* [ASSR Trabajo autónomo 2 Enrutamiento entre servidores Linux](trabajos/trabajo2.md)
+* [ASSR Trabajo autónomo 3 Desarrollo web con base de datos](trabajos/trabajo3.md)
 
 ## RECURSOS DE SOFTWARE
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
