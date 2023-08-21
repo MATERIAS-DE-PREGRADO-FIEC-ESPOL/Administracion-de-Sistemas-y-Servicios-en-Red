@@ -3,8 +3,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 ---
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
-## Trabajo Autónomo 2
-## Enrutamiento entre servidores Linux
+## Trabajo Autónomo 2 Enrutamiento entre servidores Linux
 
 ## 🎯 Objetivo de Aprendizaje
 

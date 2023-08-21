@@ -3,9 +3,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 ---
 [Regresar](/Administracion-de-Sistemas-y-Servicios-en-Red/)
 
-## Trabajo Autónomo 1
-
-## Automatización de la administración de un servidor Linux
+## Trabajo Autónomo 1 Automatización de la administración de un servidor Linux
 
 ## 🎯 Objetivo de Aprendizaje
 Al finalizar el trabajo el estudiante será capaz de:
