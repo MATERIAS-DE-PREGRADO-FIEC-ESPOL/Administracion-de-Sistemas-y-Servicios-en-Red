@@ -32,10 +32,10 @@ Al finalizar la clase el estudiante será capaz de:
 - Los mecanismos de suscripción siempre proporcionan un mejor rendimiento que otras opciones, como el sondeo.
 
 <p align="center">
-  <img src="imagenes/assr_unidad3_1_observador.png" alt="observador" width=""80%">
+  <img src="imagenes/assr_unidad3_1_observador.png" alt="observador" width="80%">
 </p>
 
-<a name="observador"> </a>
+<a name="mvc"> </a>
 
 ### 🕸️ Modelo Vista Controlador (MVC)
 - El patrón de diseño Model View Controller (MVC) tiene como objetivo simplificar el desarrollo de aplicaciones que dependen de interfaces gráficas de usuario.
