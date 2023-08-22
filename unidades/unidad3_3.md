@@ -173,7 +173,7 @@ servidor de autenticación como un servicio de identidad (ID).
 
 <a name="webhook"> </a>
 
-## 💻 Webhoook](#)
+## 💻 Webhoook
 
 - Un Webhook es una devolución de llamada HTTP, o un HTTP POST, a una URL especificada que notifica a la aplicación cuando se produce una actividad o evento en particular en los recursos.
 - Con webhooks, las aplicaciones son más eficientes ya que no se requieren mecanismos de sondeo.
