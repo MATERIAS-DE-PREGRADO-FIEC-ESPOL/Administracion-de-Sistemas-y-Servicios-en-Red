@@ -19,7 +19,7 @@ Al finalizar la clase el estudiante será capaz de:
     - [Opciones](#opciones)
     - [Argumentos](#argumentos)
 - [Historial](#historial)
-- [Manual](#Manual)
+- [Manual](#manual)
 - [Búsqueda de comandos y documentación](#busqueda_comandos)
 - [Búsqueda de archivos o directorios](#busqueda_archivos)
 - [Documentación de información](#documentacion)
