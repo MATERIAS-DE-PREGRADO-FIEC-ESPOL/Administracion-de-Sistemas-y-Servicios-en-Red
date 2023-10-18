@@ -9,7 +9,7 @@
 * [II PAO 2023 Políticas de la materia de ASSR](https://aulavirtual.espol.edu.ec/files/4347406/download?download_frd=1)
 
 ## UNIDADES
-* Unidad 1: Internet y servicios en red
+* Unidad 1: Sistemas operativos basados en Linux
     * [1.1 Distribuciones Linux](unidades/unidad1_1.md)
     * [1.2 Software Linux](unidades/unidad1_2.md)
     * [1.3 Administración del sistema](unidades/unidad1_3.md)
