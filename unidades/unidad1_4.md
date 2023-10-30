@@ -101,7 +101,7 @@ Oct 30 14:07:01 localhost CROND[2974]: (root) CMDEND (/home/acollaguazo/script1.
 
 
 <a name="scripting"> </a>
-## 💻 Scripts en Bash
+## 💻 Scripting
 
 ## Script de un menú de administración para el servidor con linux
 
