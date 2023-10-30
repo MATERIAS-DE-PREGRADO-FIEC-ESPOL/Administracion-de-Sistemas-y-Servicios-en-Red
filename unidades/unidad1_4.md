@@ -82,7 +82,9 @@ Ejercicio: Para realizar la tarea de reinicio del servidor, el domingo, miércol
 
 ## Script de un menú de administración para el servidor con linux
 
-``` #!/bin/bash
+``` 
+#!/bin/bash
+
 #################################################
 # Script de menu de consola para administracion #
 # Desarrollado por: Adriana Collaguazo          #
@@ -90,19 +92,19 @@ Ejercicio: Para realizar la tarea de reinicio del servidor, el domingo, miércol
  
 echo -e "\n========================================="
 echo -e "MENU DE ADMINISTRACION DEL SERVIDOR LINUX"
-echo -e "                              Version 1.0                                       "
+echo -e "                              Version 1.0"
 echo -e "=========================================\n"
  
 echo "1. Interfaces            2. Cambio de IP WAN"
 echo "3. Usuarios              4. Envio de correo"
 echo "5. Sniffer               6. Logs del sistema"
 echo -e "7. Reiniciar          8. Apagar\n"
-echo -n "[$HOSTNAME]: "
+echo -n "[$HOSTNAME]:"
 read opcion
  
 function interfaces()
 {
-ifconfig | less
+ifconfig ens160 | less
 sleep 4
 }
   
@@ -122,18 +124,26 @@ echo -e "\nCambiando la direccion IP WAN en la interfaz enp0s3....\n"
 service network restart
 sleep 4
 }
- 
-case $opcion in
- 
-1) interfaces;;
- 
-2) cambioip;;
 
-5) Comando
-tcpdump
- 
-esac
+function reiniciar()
+{
+  init 6
+}
 
+function apagar()
+{
+  init 0
+}
+
+while [true]; do
+  case $opcion in
+    1) interfaces;;
+    2) cambioip;;
+    7) reiniciar;;
+    8) apagar;;
+    *) Ingrese una opcion valida entre 1 a 8;;
+  esac
+done
 ```
 
 ```
@@ -148,7 +158,6 @@ MENU DE ADMINISTRACION DEL SERVIDOR LINUX
 3. Usuarios              4. Envio de correo
 5. Sniffer               6. Logs del sistema
 7. Reiniciar             8. Apagar
-
 [localhost.localdomain]: 1
 ```
 
