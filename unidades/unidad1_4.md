@@ -141,7 +141,7 @@ while [true]; do
     2) cambioip;;
     7) reiniciar;;
     8) apagar;;
-    *) Ingrese una opcion valida entre 1 a 8;;
+    *) echo "Ingrese una opcion valida entre 1 a 8";;
   esac
 done
 ```
