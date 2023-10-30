@@ -66,15 +66,38 @@ ZIP no es tan frecuente en Linux, pero es compatible con los comandos zip y desc
 <a name="automatizacion"> </a>
 ## 💻 Automatización de tareas programadas
 
-La programación de tareas de mantenimiento regulares, como las copias de seguridad, es administrada por el servicio cron en Linux. El formato del archivo /etc/crontab es el siguiente:
+- La programación de tareas de mantenimiento regulares, como las copias de seguridad, es administrada por el servicio cron en Linux. El formato del archivo /etc/crontab es el siguiente:
 
-# Un comentario inicia con el símbolo de # en cualquier parte del archivo.
 ```
   *      *       *         *        *          
 minute  hour  day-month  month  day(s)-week   username   command to be executed
 ```
+***Un comentario inicia con el símbolo de # en cualquier parte del archivo.***
 
-Ejercicio: Para realizar la tarea de reinicio del servidor, el domingo, miércoles y viernes a las 02h00 am.
+- Una vez modificado el archivo crontab, reiniciar el servicio de cron.
+
+```
+[root@localhost acollaguazo]# service crond restart
+```
+
+Luego, para verificar que se ejecutó la tarea programada utilizar el comando:
+
+```
+Redirecting to /bin/systemctl restart crond.service
+[root@localhost acollaguazo]# tail -f /var/log/cron
+Oct 30 14:01:01 localhost run-parts[30311]: (/etc/cron.hourly) finished 0anacron
+Oct 30 14:01:01 localhost CROND[30301]: (root) CMDEND (run-parts /etc/cron.hourly)
+Oct 30 14:02:46 localhost crond[1248]: (CRON) STARTUP (1.5.7)
+Oct 30 14:02:46 localhost crond[1248]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 95% if used.)
+Oct 30 14:02:46 localhost crond[1248]: (CRON) INFO (running with inotify support)
+Oct 30 14:06:26 localhost crond[1248]: (CRON) INFO (Shutting down)
+Oct 30 14:06:26 localhost crond[2970]: (CRON) STARTUP (1.5.7)
+Oct 30 14:06:26 localhost crond[2970]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 27% if used.)
+Oct 30 14:06:26 localhost crond[2970]: (CRON) INFO (running with inotify support)
+Oct 30 14:06:26 localhost crond[2970]: (CRON) INFO (@reboot jobs will be run at computer's startup.)
+Oct 30 14:07:01 localhost CROND[2975]: (root) CMD (/home/acollaguazo/script1.sh)
+Oct 30 14:07:01 localhost CROND[2974]: (root) CMDEND (/home/acollaguazo/script1.sh)
+```
 
 
 <a name="scripting"> </a>
