@@ -33,6 +33,9 @@
     * [4.3. Back End](unidades/unidad4_3.md)
     * [4.4. Despliegue de una aplicación web](unidades/unidad4_1.md)
 
+## LECTURAS COMPLEMENTARIOS
+* [ASSR LT1 Writing_RESTful_APIs_Reading](/lecturas/Writing_RESTful_APIs_Reading.pdf) 
+
 ## TRABAJOS AUTÓNOMOS
 * [ASSR Trabajo autónomo 1 Automatización de la administración de un servidor Linux](trabajos/trabajo1.md)
 * [ASSR Trabajo autónomo 2 Enrutamiento entre servidores Linux](trabajos/trabajo2.md)
